@@ -1,7 +1,4 @@
 body {
-  /* font-family: 'Inter', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif; */
   margin: 0;
   padding: 0;
 }
@@ -17,7 +14,7 @@ body {
   padding: 15px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .nav {
     flex-direction: row;
     align-items: center;
@@ -29,7 +26,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
@@ -54,7 +52,7 @@ body {
   margin-bottom: 17px;
 }  
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .nav__block:nth-child(1) {
     display: flex;
     align-items: start;
@@ -107,7 +105,7 @@ body {
   font-weight: 700;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .nav__title-block {
     font-size: 18px;
     line-height: 21px;
@@ -128,7 +126,7 @@ body {
   height: 17px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--choose-city > img {
     height: 30px;
   }
@@ -144,7 +142,7 @@ body {
   line-height: 10px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--choose-city > span {
     margin-left: 10px;
     font-size: 16px;
@@ -156,7 +154,7 @@ body {
   height: 12px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--call-to > img {
     height: 30px;
   }
@@ -172,7 +170,7 @@ body {
   margin-left: 5px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--call-to > span {
     font-size: 20px;
     line-height: 23px;
@@ -185,7 +183,7 @@ body {
   margin-right: 5px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--social-link {
     margin-right: 10px;
   }
@@ -195,13 +193,12 @@ body {
   height: 12px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--social-link > img {
     height: 25px;
   }
 }
 
-/* button with arrow red or green */
 .button-with-arrow {
   box-sizing: border-box;
   display: flex;
@@ -217,7 +214,7 @@ body {
   border-right: 26px solid #000;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button-with-arrow {
     border-radius: 5px;
     height: 53px;
@@ -233,7 +230,7 @@ body {
   height: 8px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button-with-arrow > img {
     right: -33px;
     top: calc(50% - 8px);
@@ -253,7 +250,7 @@ body {
   margin-bottom: 2px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button-with-arrow__title {
     font-size: 16px;
     line-height: 19px;
@@ -271,7 +268,7 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button-with-arrow__description {
     font-size: 12px;
     line-height: 14px;
@@ -283,7 +280,7 @@ body {
   border-right: 26px solid #FF3B3B;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--order-team {
     border: 1px solid #FF3B3B;
     border-right: 52px solid #FF3B3B;
@@ -295,7 +292,7 @@ body {
   border-right: 26px solid #59C65D;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--find-team {
     border: 1px solid #59C65D;
     border-right: 52px solid #59C65D;
@@ -305,7 +302,7 @@ body {
 .button--v9ku-logo img {
   height: 36px;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1260px) {
   .button--v9ku-logo img {
     height: 62px;
   }
