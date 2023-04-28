@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2px;
 
   top: 4.85px;
   left: 5px;
@@ -138,6 +139,7 @@
   .player-card__left-icon {
     top: 10px;
     left: 10px;
+    gap: 4px;
   }
 
   .player-card__left-icon img {
