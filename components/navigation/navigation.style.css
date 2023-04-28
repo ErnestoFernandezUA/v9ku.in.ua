@@ -1,8 +1,8 @@
-.section__navigation {
+.navigation {
   background-color: #fff;
 }
 
-.navigation {
+.navigation__container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,7 +67,7 @@
 }
 
 @media screen and (min-width: 1260px) {
-  .navigation {
+  .navigation__container {
     justify-content: center;
   }
 
