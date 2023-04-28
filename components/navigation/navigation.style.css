@@ -67,7 +67,7 @@
 }
 
 @media screen and (min-width: 1260px) {
-  .navigation__container {
+  .navigation > div {
     justify-content: center;
   }
 
