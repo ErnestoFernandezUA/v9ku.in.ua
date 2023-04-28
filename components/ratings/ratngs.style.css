@@ -9,14 +9,21 @@
   gap: 6px;  
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 600px) {
+  .ratings__container {
+    grid-template-columns: repeat(8, minmax(50px, 1fr));
+    gap: 10px; 
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .ratings__container {
     grid-template-columns: repeat(6, minmax(50px, 1fr));
     gap: 10px; 
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1260px) {
   .ratings__container {
     grid-template-columns: repeat(8, minmax(50px, 1fr));
     gap: 10px; 
