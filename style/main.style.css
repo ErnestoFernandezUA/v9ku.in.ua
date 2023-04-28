@@ -2,6 +2,10 @@
   background-color: #FAFAFA;
 }
 
+.main > section:not(:first-child) {
+  margin-bottom: 80px;
+}
+
 .container {
   margin: 0 50px;
 }

@@ -2,7 +2,7 @@
   background-color: #fff;
 }
 
-.navigation__container {
+.navigation > div {
   display: flex;
   flex-direction: row;
   align-items: center;
