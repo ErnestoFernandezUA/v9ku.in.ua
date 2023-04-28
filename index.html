@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header class="header">
@@ -24,7 +25,7 @@
           <div>
             <button class="button-nav button--choose-city">
               <img
-                src="./assets/images/header/ukraine-logo.svg"
+                src="./components/header/assets/images/ukraine-logo.svg"
                 alt="ukraine-logo"
               >
               <span>Обери місто</span>
@@ -38,7 +39,7 @@
           <p class="button-with-arrow__title">Заявити команду</p>
           <p class="button-with-arrow__description">на найближчі турніри</p>
           <img
-            src="./assets/images/header/arrow.svg"
+            src="./components/header/assets/images/arrow.svg"
             alt="arrow"
             class="button-with-arrow__icon"
           >
@@ -46,7 +47,7 @@
 
         <button class="button-nav button--v9ku-logo">
           <img
-            src="./assets/images/header/v9ku-logo.svg" 
+            src="./components/header/assets/images/v9ku-logo.svg" 
             alt="v9ku-logo"
             class="button--img-v9ku-logo"
           >
@@ -56,7 +57,7 @@
           <p class="button-with-arrow__title">Подати заявку</p>
           <p class="button-with-arrow__description">на пошук команди</p>
           <img
-            src="./assets/images/header/arrow.svg"
+            src="./components/header/assets/images/arrow.svg"
             alt="arrow"
             class="button-with-arrow__icon"
           >
@@ -68,7 +69,7 @@
           <div>
             <button class="button-nav button--choose-city">
               <img
-                src="./assets/images/header/ukraine-logo.svg"
+                src="./components/header/assets/images/ukraine-logo.svg"
                 alt="ukraine-logo"
               >
               <span>Обери місто</span>
@@ -78,27 +79,38 @@
 
         <div class="nav__item">
           <button class="button-nav button--call-to">
-            <img src="./assets/images/header/phone-icon.svg" alt="phone-icon">
+            <img src="./components/header/assets/images/phone-icon.svg" alt="phone-icon">
             <span>+380 997 45 34</span>
           </button>
         </div>
 
         <div class="nav__item nav__item--social-link">
           <button class="button-nav button--social-link">
-            <img src="./assets/images/header/facebook-icon.svg" alt="facebook-icon">
+            <img src="./components/header/assets/images/facebook-icon.svg" alt="facebook-icon">
           </button>
 
           <button class="button-nav button--social-link">
-            <img src="./assets/images/header/youtube-icon.svg" alt="youtube-icon">
+            <img src="./components/header/assets/images/youtube-icon.svg" alt="youtube-icon">
           </button>
 
           <button class="button-nav button--social-link">
-            <img src="./assets/images/header/instagram-icon.svg" alt="instagram-icon">
+            <img src="./components/header/assets/images/instagram-icon.svg" alt="instagram-icon">
           </button>
         </div>  
       </div>
     </nav>
   </header>
+
+
   
+  <script>
+		var buttons = document.querySelectorAll("button");
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        alert('clicked!')
+      });
+    });
+	</script>
 </body>
 </html>
