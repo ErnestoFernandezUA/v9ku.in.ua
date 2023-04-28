@@ -2,8 +2,20 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 20px;
+  line-height: 23px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.title--inverse {
+  color: #fff;
+  background-color: linear-gradient(90.21deg, #292929 15.28%, #000000 94.83%);
+}
+
+@media screen and (min-width: 1260px) {
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }

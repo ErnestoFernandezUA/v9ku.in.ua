@@ -1,0 +1,51 @@
+.slider {
+  min-width: 0;
+} 
+
+.slick-slider {
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slider__item {
+
+}
+
+.slider .slick-arrow {
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 9px;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 2px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  /* width: 200px; */
+  height: 3px;
+  border: none;
+  /* padding: 0 20px; */
+  background-color:#D9D9D9;
+  border-radius: 11px;
+  opacity: 0.5;
+  width: max-content;
+  display: block;
+}
+
+.slider .slick-dots li.slick-active button {
+  opacity: 1;
+}

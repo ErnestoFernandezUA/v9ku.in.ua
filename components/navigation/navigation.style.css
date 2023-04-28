@@ -3,10 +3,7 @@
 }
 
 .navigation > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
+  min-width: 0;
 }
 
 .navigation__item {
@@ -21,6 +18,7 @@
   white-space: nowrap;
   text-align: center;
   color: #0B0B0BB2;
+  user-select: none;
 
   font-family: 'Roboto';
   font-style: normal;

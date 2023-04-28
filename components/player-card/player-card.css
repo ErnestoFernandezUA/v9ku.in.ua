@@ -137,9 +137,9 @@
   }
 
   .player-card__left-icon {
+    gap: 4px;
     top: 10px;
     left: 10px;
-    gap: 4px;
   }
 
   .player-card__left-icon img {

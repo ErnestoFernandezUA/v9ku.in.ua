@@ -1,8 +1,11 @@
 @import url(./style/normalize.css);
 @import url(./style/typography.style.css);
 @import url(./style/main.style.css);
+@import url(./style/slider.style.css);
+
 @import url(./components/header/header.style.css);
 @import url(./components/commercial/commercial.style.css);
 @import url(./components/navigation/navigation.style.css);
 @import url(./components/leagues/leagues.style.css);
 @import url(./components/ratings/ratngs.style.css);
+@import url(./components/table-league/table-league.style.css);

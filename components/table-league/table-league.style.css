@@ -1,0 +1,20 @@
+.table-league {
+
+}
+
+.table-league__title {
+  padding: 12px 0;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.table-league__title > span:last-child {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1260px) {
+  .table-league__title {
+    border-radius: 8px 8px 0px 0px;
+    line-height: 52px;
+  }
+}
