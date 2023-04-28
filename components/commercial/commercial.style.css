@@ -1,0 +1,24 @@
+.commercial {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.commercial__item:nth-child(n + 2) {
+  display: none;
+  max-height: 100px;
+}
+
+@media screen and (min-width: 1260px) {
+  .commercial {
+    height: 130px;
+  }
+
+  .commercial__item:nth-child(n + 2) {
+    display: inherit;
+    max-height: 100px;
+  }
+}

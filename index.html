@@ -5,11 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>v9ky.in.ua</title>
-  <link rel="stylesheet" href="style.css">
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.style.css">
+  <link rel="stylesheet" href="./components/header/header.style.css">
+  <link rel="stylesheet" href="./components/commercial/commercial.style.css">
+  
+
+
 
 </head>
 <body>
@@ -101,6 +106,31 @@
     </nav>
   </header>
 
+  <main>
+    <section class="commercial">
+      <div class="commercial__item">
+        <a href="#">
+          <img src="./components/commercial/assets/images/coca-cola-logo.svg" alt="coca-cola logo">
+        </a>
+      </div>
+      
+      <div class="commercial__item">
+        <a href="#">
+          <img src="./components/commercial/assets/images/wwf-logo.svg" alt="wwf logo">
+        </a>
+      </div>
+      
+      <div class="commercial__item">
+        <a href="#">
+          <img src="./components/commercial/assets/images/armani-logo.svg" alt="armani logo">
+        </a>
+      </div><div class="commercial__item">
+        <a href="#">
+          <img src="./components/commercial/assets/images/starbucks.svg" alt="starbucks logo">
+        </a>
+      </div>
+    </section>
+  </main>
 
   
   <script>
@@ -108,7 +138,7 @@
 
     buttons.forEach(button => {
       button.addEventListener('click', function() {
-        alert('clicked!')
+        console.log('clicked');
       });
     });
 	</script>
