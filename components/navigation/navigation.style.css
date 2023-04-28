@@ -1,5 +1,8 @@
-.navigation {
+.section__navigation {
   background-color: #fff;
+}
+
+.navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
