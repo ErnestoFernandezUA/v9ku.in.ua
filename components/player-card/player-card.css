@@ -1,0 +1,192 @@
+.player-card {
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+
+  /* width: 71px; */
+  height: 134px;
+  border-radius: 4px;
+  padding: 3.15px;
+}
+
+.player-card__photo-container {
+  /* width: 64.71px; */
+  height: 74.64px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(9, 9, 9, 0.05);
+  border-radius: 3.59494px 3.59494px 0px 0px;
+}
+
+.player-card__left-icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  top: 4.85px;
+  left: 5px;
+}
+
+.player-card__left-icon img {
+  height: 9px;
+}
+
+.player-card__left-icon > span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5px;
+  line-height: 6px;
+  text-transform: uppercase;
+  color: #0B0B0B;
+}
+
+.player-card__right-icon {
+  position: absolute;
+  height: 9px;
+  top: 4.5px;
+  right: 5px;
+}
+
+.player-card__photo {
+  padding-top: 20px;
+  display: block;
+  height: 100%;
+}
+
+.player-card__role {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: linear-gradient(90.21deg, #292929 15.28%, #000000 94.83%);
+
+  font-size: 7px;
+  line-height: 13.49px;
+}
+
+.player-card__club {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #0B0B0B;
+  opacity: 0.3;
+  
+  font-size: 5px;
+  line-height: 12.59px;
+}
+
+.player-card__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #0B0B0B;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(11, 11, 11, 0.05);;
+
+  font-size: 6px;
+  line-height: 7px;
+}
+
+.player-card__link {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 4px;
+  margin-top: 1.5px;
+}
+
+.player-card__link > span {
+  color: #59C65D;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  
+  font-size: 6px;
+  line-height: 7px;
+  margin-right: 2px;
+}
+
+.player-card__link > img {
+  height: 6.15px;
+}
+
+@media screen and (min-width: 1260px) {
+  .player-card {
+    /* width: 158px; */
+    width: auto;
+    height: 298px;
+    border-radius: 8px;
+    padding: 6.6px;
+  }
+
+  .player-card__photo-container {
+    /* width: 144px; */
+    width: auto;
+    height: 166px;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .player-card__left-icon {
+    top: 10px;
+    left: 10px;
+  }
+
+  .player-card__left-icon img {
+    height: 20px;
+  }
+
+  .player-card__left-icon > span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .player-card__right-icon {
+    height: 20px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .player-card__role {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .player-card__club {
+    font-size: 11px;
+    line-height: 28px;
+  }
+
+  .player-card__name {  
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  
+  .player-card__link {
+    margin-top: 8px;
+    padding: 8px;
+  }
+
+  .player-card__link > span {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 5px;
+  }
+
+  .player-card__link > img {
+    height: 14px;
+  }
+}
