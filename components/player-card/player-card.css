@@ -3,14 +3,12 @@
   box-sizing: border-box;
   position: relative;
 
-  /* width: 71px; */
   height: 134px;
   border-radius: 4px;
   padding: 3.15px;
 }
 
 .player-card__photo-container {
-  /* width: 64.71px; */
   height: 74.64px;
   overflow: hidden;
   position: relative;
@@ -123,9 +121,8 @@
   height: 6.15px;
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 760px) {
   .player-card {
-    /* width: 158px; */
     width: auto;
     height: 298px;
     border-radius: 8px;
@@ -133,7 +130,6 @@
   }
 
   .player-card__photo-container {
-    /* width: 144px; */
     width: auto;
     height: 166px;
     border-radius: 8px 8px 0px 0px;
