@@ -3,9 +3,25 @@
 }
 
 .main > section:not(:first-child) {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1260px) {
+  .main > section:not(:first-child) {
+    margin-bottom: 80px;
+  }
 }
 
 .container {
-  margin: 0 50px;
+  margin: 0 9px;
+}
+
+.container--navigation {
+  margin: 0;
+}
+
+@media screen and (min-width: 1260px) {
+  .container {
+    margin: 0 50px;
+  } 
 }
