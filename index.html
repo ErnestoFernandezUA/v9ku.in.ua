@@ -9,6 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
@@ -126,24 +133,92 @@
     </section>
 
     <section class="navigation">
-      <div class="container container--navigation slider">
-        <div class=" navigation__item slider__item"><a href="#">5x5</a></div>
-        <div class=" navigation__item slider__item"><a href="#">8x8</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Новини</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Календар</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Команди</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Трансфери</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Таблиці</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Стадіони</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Про В9КУ</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Архів</a></div>
-        <div class=" navigation__item slider__item"><a href="#">Контакти</a></div>
-        <div class=" navigation__item slider__item">
-          <button class="navigation__button-broadcast">
-            <a href="#">Трансляція</a>
-          </button>
+      <!-- <div class="swiper">
+        <div class="swiper-wrapper">     
+          <div class="navigation__item swiper-slide"><a href="#">5x5</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">8x8</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Новини</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Календар</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Команди</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Трансфери</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Таблиці</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Стадіони</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Про В9КУ</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Архів</a></div>
+          <div class="navigation__item swiper-slide"><a href="#">Контакти</a></div>
+          <div class="navigation__item swiper-slide">
+            <button class="navigation__button-broadcast">
+              <a href="#">Трансляція</a>
+            </button>
+          </div>
         </div>
+      </div> -->
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">5x5</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">8x8</a></div>
+              </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Новини</a></div>
+              </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Календар</a></div>
+              </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Команди</a></div>
+              </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Трансфери</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Таблиці</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Стадіони</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Про В9КУ</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Архів</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigation__item">
+                <a href="#">Контакти</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <button class="navigation__item navigation__item--broadcast">
+                <a href="#">Трансляція</a>
+              </button>
+            </div>
+        </div>
+      
+        <div class="swiper-bg-scroll"></div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
+      
     </section>
 
     <section class="leagues">
@@ -568,17 +643,7 @@
     </section>
   </main>
   
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="./js/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
-  <script>
-		var buttons = document.querySelectorAll("button");
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        console.log('clicked');
-      });
-    });
-	</script>
 </body>
 </html>               

@@ -1,15 +1,44 @@
-$(document).ready(function(){
-  $('.slider').slick({
-    arrows: false,
-    dots: true,
-    // slidesToShow: 4,
-    // slidesToScroll: 1,
-    // speed: 1000,
-    infinite: false,
-    // initialSlide: 0,
-    centerMode: false,
-    variableWidth: true,
-    // draggable: false,
-    touchThreshold: 10,
+var buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    console.log('clicked');
   });
 });
+
+console.log(window.innerWidth);
+
+const breakpointSlider = 1260; 
+let swipers;
+
+if (window.innerWidth < breakpointSlider) {
+  swipers = document.querySelectorAll('.swiper');
+  
+  swipers.forEach(el => new Swiper(el, {
+    enabled: Boolean(window.innerWidth < 1260),
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+  speed: 400,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    dragSize: 70,
+    // hide: true,
+    // grid: {
+    //   rows: 3,
+    // },
+    // mousewheel: {
+    //   forceToAxis: true,
+    // },
+  },
+  // breakpoints: {
+  //   640: {
+  //     slidesPerView: 10,
+  //   },
+  //   1024: {
+  //     slidesPerView: 10,
+  //   },
+  // },
+  }))
+}
+
+
