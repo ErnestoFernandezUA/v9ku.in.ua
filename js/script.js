@@ -19,8 +19,25 @@ if (window.innerWidth < breakpointSlider) {
   slidesPerView: 'auto',
   spaceBetween: 0,
   speed: 400,
+  // centeredSlides: Boolean(window.innerWidth > 1260),
+
   scrollbar: {
     el: '.swiper-scrollbar',
+    dragSize: 70,
+    // hide: true,
+  },
+  }))
+}
+
+new Swiper('.swiper-table', {
+  // enabled: Boolean(window.innerWidth < 1260),
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+  speed: 400,
+  height: 200,
+  // centeredSlides: Boolean(window.innerWidth > 1260),
+  scrollbar: {
+    el: '.swiper-scrollbar-table',
     dragSize: 70,
     // hide: true,
     // grid: {
@@ -38,7 +55,7 @@ if (window.innerWidth < breakpointSlider) {
   //     slidesPerView: 10,
   //   },
   // },
-  }))
-}
+  },
+);
 
 

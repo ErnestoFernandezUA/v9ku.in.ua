@@ -1,9 +1,14 @@
 .swiper {
   width: 100%;
   background-color: #fff;
-  overflow: visible;
-  height: fit-content;
+  /* overflow: visible; */
+  /* height: fit-content; */
 }
+
+.swiper-table {
+  overflow: hidden;
+}
+
 .swiper-wrapper {
   padding: 0;
   box-sizing: border-box;
@@ -36,6 +41,15 @@
   background-color: transparent;
   position: absolute;
   top: 120px;
+}
+
+.swiper-scrollbar-table {
+  margin: 0 6px;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 3px;
+  /* position: absolute; */
+  /* top: 120px; */
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
