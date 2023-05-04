@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
-  /* box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04); ??? */
+  /* box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04); it`s need??? */
 }
 
 .table-league__table tr:first-child {
@@ -168,7 +168,6 @@
     
   .table-league__table tr th,
   .table-league__table tr td {
-    /* padding: 5px; */
     min-width: 26px;
     font-size: 14px;
     line-height: 36px;
@@ -192,12 +191,6 @@
     display: inherit;
   }
 
-  .cell--team {
-    /* text-align: left;
-    justify-content: start;
-    margin-right: 50px; */
-  }
-
   .cell--own {
     height: 26px;
     width: 26px;
@@ -209,34 +202,6 @@
     border: 0.583333px solid rgba(89, 198, 93, 0.2);
   }
   
-  .cell--win {
-    /* background: rgba(89, 198, 93, 0.1);
-    border: 0.583333px solid rgba(89, 198, 93, 0.2); */
-  }
-  
-  .cell--draw {
-    /* color: #59C65D;
-    background: rgba(66, 133, 244, 0.1);
-    border: 0.583333px solid rgba(66, 133, 244, 0.2); */
-  }
-  
-  .cell--draw {
-    /* color: #4285F4;
-    background: rgba(66, 133, 244, 0.1);
-    border: 0.583333px solid rgba(66, 133, 244, 0.2); */
-  }
-  
-  .cell--defeat {
-    /* color: #FF3B3B;
-    background: rgba(255, 59, 59, 0.1);
-    border: 0.583333px solid rgba(255, 59, 59, 0.2); */
-  }
-  
-  .cell--total {
-    /* background: #292929;
-    color: #fff; */
-  }
-
   .cell--games {
     background: rgba(11, 11, 11, 0.05);
     border: 1px solid rgba(32, 32, 32, 0.2);

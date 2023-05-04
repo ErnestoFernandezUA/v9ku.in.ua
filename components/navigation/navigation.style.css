@@ -19,6 +19,7 @@
   box-sizing: border-box;
 
   text-decoration: none;
+  text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
   color: #0B0B0BB2;
@@ -80,12 +81,11 @@
   }
 
   .navigation__item {
-    height: 30px;
   }
 
   .navigation__item > a {
+    display: inline-block;
     font-size: 18px;
-    /* line-height: 60px;  */
     min-width: none;
     /* padding: 0 22px; */
   }

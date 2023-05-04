@@ -15,10 +15,11 @@ if (window.innerWidth < breakpointSlider) {
   swipers = document.querySelectorAll('.swiper');
   
   swipers.forEach(el => new Swiper(el, {
+    followFinger: false,
     enabled: Boolean(window.innerWidth < 1260),
-  slidesPerView: 'auto',
-  spaceBetween: 0,
-  speed: 400,
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    speed: 400,
   // centeredSlides: Boolean(window.innerWidth > 1260),
 
   scrollbar: {
