@@ -55,15 +55,21 @@
     margin: 0;
     gap: 13px;
   }
-
+  
   .nav__block:nth-child(1) .nav__item:last-child {
     display: block;
   }
-
+  
   .nav__block:nth-child(2) {
     order: inherit;
     margin: 0;
-  } 
+  }
+
+  .nav__block:nth-child(2) .button--v9ku-logo {
+    /* border: 1px solid red; */
+    position: relative;
+    top: 4px;
+  }
   
   .nav__block:nth-child(3) {
     margin: 0;
