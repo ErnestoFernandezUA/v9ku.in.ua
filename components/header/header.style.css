@@ -6,7 +6,7 @@
 .nav {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 @media screen and (min-width: 1260px) {
@@ -67,14 +67,14 @@
   
   .nav__block:nth-child(3) {
     margin: 0;
-    gap: 42px;
+    gap: 22px;
   }  
   .nav__block:nth-child(3) .nav__item:first-child {
     display: none;
   }
 
   .nav__block:nth-child(2) {
-    gap: 50px;
+    gap: 10px;
   }
 }
 
