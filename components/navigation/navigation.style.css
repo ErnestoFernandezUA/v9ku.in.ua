@@ -32,7 +32,7 @@
   line-height: 30px;
 }
 
-.navigation__item > a:hover {
+.navigation__item > a:active {
   color: #fff;
   background-color: #0B0B0B;
 }
