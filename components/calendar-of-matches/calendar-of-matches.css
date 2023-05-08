@@ -1,0 +1,109 @@
+@import url(../card-of-matches/card-of-matches.css);
+@import url(./preview.css);
+
+.calendar-of-matches .title {
+  margin-bottom: 10px; 
+}
+
+.calendar-of-matches__buttons {
+  display: flex;
+  gap: 2px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.calendar-of-matches__button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  color: #292929;
+  padding: 3px 0;
+  margin: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.calendar-of-matches__button--past {
+  background-color: #FFD018;
+  border: 1px solid #FFD018;
+}
+
+.calendar-of-matches__button--current {
+  background-color: #FF3B3B;
+  border: 1px solid #FF3B3B;
+  color: #fff;
+}
+
+.calendar-of-matches__button p {
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar-of-matches__button > p:first-child {
+  font-weight: 400;
+}
+
+.calendar-of-matches__button > p:nth-child(2) {
+  font-weight: 500;
+}
+
+.calendar-of-matches__preview {
+  display: none;
+}
+
+@media screen and (min-width: 1260px) {
+  .calendar-of-matches > div.container > div {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 10px 57px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04);
+    border-radius: 8px;
+  }
+
+  .calendar-of-matches__title {
+    justify-self: start;
+    align-self: start;
+  }
+
+  .calendar-of-matches div.swiper {
+    overflow: visible;
+  }
+
+  .calendar-of-matches div.swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .calendar-of-matches div.swiper-slide {
+    height: auto;
+  }
+
+
+  .calendar-of-matches__buttons {
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .calendar-of-matches__button {
+    height: 70px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .calendar-of-matches__preview {
+    display: initial;
+  }
+
+}

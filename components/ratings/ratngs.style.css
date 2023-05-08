@@ -1,6 +1,7 @@
 @import url(../player-card/player-card.css);
 
-.ratings {
+.ratings .title {
+  margin-bottom: 10px;
 }
 
 .ratings__container {

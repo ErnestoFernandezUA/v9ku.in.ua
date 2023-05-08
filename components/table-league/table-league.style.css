@@ -66,18 +66,22 @@
 
 .cell--gold {
   background-color: #FDBE11;
+  width: 13px;
 }
 
 .cell--silver {
   background: linear-gradient(180deg, #B9B9B9 0%, #E2E2E2 100%);
+  width: 13px;
 }
 
 .cell--bronze {
   background-color: #C79417;
+  width: 13px;
 }
 
 .cell--outsider {
   background-color: #FF3B3B;
+  width: 13px;
 }
 
 .cell--own {
@@ -138,6 +142,7 @@
 
   .table-league__table {
     border-spacing: 0 0;
+    border-radius: 8px;
   }
   
   .table-league__table tr {
