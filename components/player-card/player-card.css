@@ -2,10 +2,11 @@
   background: #fff;
   box-sizing: border-box;
   position: relative;
-
   height: 134px;
   border-radius: 4px;
   padding: 3.15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .player-card__photo-container {
@@ -69,6 +70,11 @@
 
   font-size: 7px;
   line-height: 13.49px;
+}
+
+.player-card--disqualification > div.player-card__role {
+  background: none;
+  background-color: #FF3B3B;
 }
 
 .player-card__club {

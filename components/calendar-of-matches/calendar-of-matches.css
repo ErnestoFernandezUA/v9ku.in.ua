@@ -60,6 +60,10 @@
   display: none;
 }
 
+.calendar-of-matches div.swiper-wrapper {
+  gap: 10px;
+}
+
 @media screen and (min-width: 1260px) {
   .calendar-of-matches > div.container > div {
     display: grid;

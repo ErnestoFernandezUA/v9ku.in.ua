@@ -1,0 +1,42 @@
+.selection-zone__current {
+  background: #55C95A;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+.selection-zone .title {
+  margin-bottom: 15px;
+}
+
+.selection-zone .ratings__container {
+  margin-bottom: 15px;
+}
+
+.selection-zone__footer-title {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selection-zone__footer-title > img {
+  height: 21px;
+}
+
+.selection-zone__footer-title > h3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 1260px) {
+  .selection-zone__current {
+    display: none;
+  }
+}

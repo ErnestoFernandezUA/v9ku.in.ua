@@ -1,6 +1,9 @@
 @import url(./style/normalize.css);
 @import url(./style/typography.style.css);
-@import url(./style/main.style.css);
+@import url(./style/variables.style.css);
+@import url(./style/z-index.style.css);
+
+@import url(./components/main/main.style.css);
 @import url(./style/slider.style.css);
 
 @import url(./components/header/header.style.css);
@@ -10,3 +13,7 @@
 @import url(./components/ratings/ratngs.style.css);
 @import url(./components/table-league/table-league.style.css);
 @import url(./components/calendar-of-matches/calendar-of-matches.css);
+@import url(./components/selection-zone/selection-zone.style.css);
+@import url(./components/disqualification/disqualification.style.css);
+
+@import url(./components/footer/footer.style.css);
