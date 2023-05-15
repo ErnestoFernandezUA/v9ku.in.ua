@@ -2,11 +2,12 @@
 @import url(./style/typography.style.css);
 @import url(./style/variables.style.css);
 @import url(./style/z-index.style.css);
-
-@import url(./components/main/main.style.css);
 @import url(./style/slider.style.css);
 
+@import url(./components/main/main.style.css);
 @import url(./components/header/header.style.css);
+@import url(./components/footer/footer.style.css);
+
 @import url(./components/commercial/commercial.style.css);
 @import url(./components/navigation/navigation.style.css);
 @import url(./components/leagues/leagues.style.css);
@@ -16,4 +17,4 @@
 @import url(./components/selection-zone/selection-zone.style.css);
 @import url(./components/disqualification/disqualification.style.css);
 
-@import url(./components/footer/footer.style.css);
+@import url(./components/match-zone/match-zone.style.css);

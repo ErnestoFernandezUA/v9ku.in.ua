@@ -4,31 +4,107 @@
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 12.35; /*15px;*/
+  padding: 12.35;
   box-sizing: border-box;
   padding: 15px;
+  position: relative;
 }
 
-.card-of-matches > div:nth-child(1) {
+.card-of-matches--match-zone {
+  border: none;
+  width: 100%;
+  max-width: 790px;
+  padding: 10px;
+}
+
+.card-of-matches--status-before {
+}
+
+.card-of-matches--status-online {
+}
+
+.card-of-matches--status-finished {
+}
+
+.card-of-matches__title-match {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
+  justify-content: center;
   justify-items: center;
   align-items: center;
+
+  border-bottom: 1px solid rgba(11, 11, 11, 0.05);
 }
 
-.card-of-matches > div:nth-child(1) > div:has(.card-of-matches__date) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
+.card-of-matches--match-zone .card-of-matches__title-match {
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: repeat(3, auto);
+  margin-bottom: 8.5px;
 }
 
-.card-of-matches > div:nth-child(1) > img {
+.card-of-matches__title-match > div {
+}
+
+.card-of-matches__shirt {
+  display: none;
+}
+
+.card-of-matches--match-zone .card-of-matches__shirt {
+  display: initial;
+  width: 40px;
+  height: 40px;
+}
+
+.card-of-matches--match-zone .card-of-matches__shirt--left {
+  align-self: baseline;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.card-of-matches--match-zone .card-of-matches__shirt--right {
+  align-self: baseline;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.card-of-matches__team-logo {
   height: 43px;
   padding: 8px;
+  box-sizing: border-box;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-of-matches--match-zone .card-of-matches__team-logo {
+  height: 38px;
+  width: 38px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.card-of-matches--match-zone .card-of-matches__team-logo--left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: baseline;
+}
+
+.card-of-matches--match-zone .card-of-matches__team-logo--right {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: baseline;
 }
 
 .card-of-matches__score {
@@ -36,7 +112,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -44,16 +119,41 @@
   color: #0B0B0B;
 }
 
+.card-of-matches--match-zone .card-of-matches__score {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-items: start;
+  font-size: 10px;
+  gap: 2px;
+}
+
 .card-of-matches__score span {
   display: inline-block;
   background: rgba(11, 11, 11, 0.05);
   border: 1px solid rgba(32, 32, 32, 0.05);
-  border-radius: 6.31164px;
+  border-radius: 3px;
   height: 27px;
   width: 27px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+
+.card-of-matches--match-zone .card-of-matches__score span {
+  border: none;
+  /* border-radius: 2.92113px; */
+  font-size: 10px;
+  width: 12.53px;
+  height: 12.53px;
+  line-height: 14px;
+}
+
+.card-of-matches--status-finished .card-of-matches__score span {
+  background: #0B0B0B;
+  color: #fff;
 }
 
 .card-of-matches__team {
@@ -61,10 +161,35 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 12px;
   text-align: center;
   text-transform: uppercase;
   color: rgb(11, 11, 11, 0.7);
+  margin: 0;
+}
+
+.card-of-matches--match-zone .card-of-matches__team {
+  font-size: 8px;
+}
+
+.card-of-matches--match-zone .card-of-matches__team--left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.card-of-matches--match-zone .card-of-matches__team--right {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.card-of-matches--match-zone .card-of-matches__date-and-time {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .card-of-matches__date {
@@ -89,34 +214,28 @@
   opacity: 1;
 }
 
-.card-of-matches > div:nth-child(2) {
-  padding: 10px; /* 20px */
+.card-of-matches--match-zone .card-of-matches__date,
+.card-of-matches--match-zone .card-of-matches__time {
+  font-size: 6px;
+}
+
+.card-of-matches__marks {
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
-.card-of-matches > div:nth-child(3) {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 12px;
-  border-top: 1px solid rgba(11, 11, 11, 0.05);
-  padding-top: 10px;
-  box-sizing: border-box;
+.card-of-matches--match-zone .card-of-matches__marks {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
-.card-of-matches > div:nth-child(3) > a {
-  height: 26px;
-}
-
-.card-of-matches > div:nth-child(3) > a > img {
-  height: 26px;
-  width: 26px;
-}
-
-.card-of-matches__marks {
+.card-of-matches__mark {
   background: rgba(11, 11, 11, 0.05);
   border-radius: 18.8718px;
   color: #0B0B0B;
@@ -127,10 +246,102 @@
   font-size: 10px;
   line-height: 150%;
   padding: 2.35px 8.1px;
+  white-space: nowrap;
 }
 
-@media screen and (min-width: 1260px) {
-  .card-of-matches__marks {
+.card-of-matches--match-zone .card-of-matches__mark {
+  font-size: 5px;
+  padding: 1.13924px 3.79747px;
+}
 
+.card-of-matches__controls {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid rgba(11, 11, 11, 0.05);
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.card-of-matches__controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-of-matches--match-zone .card-of-matches__controls {
+  display: none;
+}
+
+.card-of-matches__controls > a {
+  height: 26px;
+}
+
+.card-of-matches__controls > a > img {
+  height: 26px;
+  width: 26px;
+}
+
+.card-of-matches__status {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  box-shadow: 0px 1.13924px 3.03797px rgba(255, 208, 24, 0.2);
+  border-radius: 3.03797px;
+
+  display: none;
+}
+
+.card-of-matches--match-zone .card-of-matches__status {
+  display: block;
+}
+
+.card-of-matches--status-before .card-of-matches__status {
+  color: #0B0B0B;
+  background: #FFD018;
+}
+
+.card-of-matches--status-online .card-of-matches__status {
+  color: #fff;
+  background: #FF3B3B;
+}
+
+.card-of-matches--status-finished .card-of-matches__status {
+  color: #fff;
+  background: #59C65D;
+}
+
+.card-of-matches__share-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: none;
+  height: fit-content;
+  font-size: 1px;
+  display: none;
+}
+
+.card-of-matches--match-zone .card-of-matches__share-button {
+  display: inline-block;
+}
+
+.card-of-matches__share-button img {
+  width: 7px;
+  height: 7px;
+}
+
+
+@media screen and (min-width: 1260px) {
+  .card-of-matches__shirt {
+    height: 121px;
+    width: 127px;
   }
 }

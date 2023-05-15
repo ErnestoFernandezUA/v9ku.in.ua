@@ -1,0 +1,21 @@
+.match-zone {
+
+}
+
+.match-zone__controls {
+  margin: 0 auto;
+  max-width: 890px;
+  margin-bottom: 30px;
+}
+
+.match-zone__current-date {
+  margin-bottom: 30px;
+}
+
+.match-zone__title {
+  margin-bottom: 15px;
+}
+
+.match-zone__matches > div {
+  margin: 0 auto;
+}
