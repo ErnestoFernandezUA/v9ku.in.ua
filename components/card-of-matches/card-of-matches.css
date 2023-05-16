@@ -37,22 +37,23 @@
 }
 
 .card-of-matches--match-zone .card-of-matches__title-match {
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto 1fr auto auto;
+  justify-content: space-between;
   grid-template-rows: repeat(3, auto);
   margin-bottom: 8.5px;
-}
 
-.card-of-matches__title-match > div {
+  box-sizing: border-box;
+  padding-bottom: 9px;
 }
 
 .card-of-matches__shirt {
   display: none;
+  width: 40px;
+  height: 40px;
 }
 
 .card-of-matches--match-zone .card-of-matches__shirt {
   display: initial;
-  width: 40px;
-  height: 40px;
 }
 
 .card-of-matches--match-zone .card-of-matches__shirt--left {
@@ -84,6 +85,7 @@
   width: 38px;
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 3px;
 
   grid-column-start: 2;
   grid-column-end: 3;
@@ -143,8 +145,6 @@
 }
 
 .card-of-matches--match-zone .card-of-matches__score span {
-  border: none;
-  /* border-radius: 2.92113px; */
   font-size: 10px;
   width: 12.53px;
   height: 12.53px;
@@ -226,6 +226,9 @@
   justify-content: center;
   gap: 4px;
   flex-wrap: wrap;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .card-of-matches--match-zone .card-of-matches__marks {
@@ -233,6 +236,7 @@
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  padding: 0;
 }
 
 .card-of-matches__mark {
@@ -330,7 +334,7 @@
 }
 
 .card-of-matches--match-zone .card-of-matches__share-button {
-  display: inline-block;
+  display: initial;
 }
 
 .card-of-matches__share-button img {
@@ -340,8 +344,71 @@
 
 
 @media screen and (min-width: 1260px) {
-  .card-of-matches__shirt {
+  .card-of-matches--match-zone {
+    padding: 40px 25px 25px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__title-match {
+    grid-template-columns: 122px 100px 1fr 100px 122px;
+    border-bottom: none;
+    margin-bottom: 25px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__shirt {
     height: 121px;
     width: 127px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__team-logo {
+    height: 100px;
+    width: 100px;
+    padding: 13.59px;
+    margin-bottom: 6px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__score {
+    font-size: 25px;
+    gap: 10px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__score span {
+    font-size: 25px;
+    width: 33px;
+    height: 33px;
+    border-radius: 7.69231px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__date {
+    font-size: 12px;
+    font-size: 16px;
+  }
+  
+  .card-of-matches--match-zone .card-of-matches__time {
+    font-size: 12px;
+    font-size: 16px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__team {
+    font-size: 14px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__mark {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  .card-of-matches--match-zone .card-of-matches__status {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .card-of-matches__share-button {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .card-of-matches__share-button img {
+    width: 23px;
+    height: 23px;
   }
 }

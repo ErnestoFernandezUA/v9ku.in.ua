@@ -17,5 +17,11 @@
 }
 
 .match-zone__matches > div {
-  margin: 0 auto;
+  margin: 0 auto 10px;
+}
+
+@media screen and (min-width: 1260px) {
+  .match-zone__matches > div {
+    margin-bottom: 15px;
+  }
 }
