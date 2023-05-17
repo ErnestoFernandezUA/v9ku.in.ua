@@ -77,5 +77,3 @@ new Swiper('.swiper--table', {
   // },
   },
 );
-
-
