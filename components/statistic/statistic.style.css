@@ -1,0 +1,128 @@
+.statistic {
+}
+
+.statistic table {
+  box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04);
+  border-radius: 2px 2px 0px 0px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4px;
+  line-height: 16px;
+  border-spacing: 0 0;
+  border-collapse: collapse;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.statistic table caption {
+  background: linear-gradient(90.21deg, #292929 15.28%, #000000 94.83%);
+  color: #fff;
+  position: relative;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.statistic table caption button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background-color: transparent;
+  height: fit-content;
+  width: auto;
+  display: block;
+  line-height: 1px;
+  cursor: pointer;
+}
+
+.statistic table caption img {
+  width: 8px;
+  height: 8px;
+}
+
+.statistic table tr th {
+  background-color: #BFBFBF;
+  color: #fff;
+}
+
+.statistic table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.statistic table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.statistic table tr th,
+.statistic table tr td {
+  padding: 0 2px;
+}
+
+.statistic table tr th:nth-child(3),
+.statistic table tr td:nth-child(3) {
+  text-align: left;
+}
+
+.statistic table tr td:nth-child(4) {
+  background-color: #F9E813;
+}
+
+.statistic table tr td:has(img) {
+  display: flex;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistic table tr td img {
+  width: 6px;
+  height: 6px;
+}
+
+@media screen and (min-width: 1260px) {
+  .statistic table {
+    box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04);
+    border-radius: 8px 8px 0px 0px;
+    font-size: 18px;
+    line-height: 76px;
+  }
+
+  .statistic table caption {
+    font-size: 32px;
+  }
+
+  .statistic table caption button {
+    right: 20px;
+    top: 20px;
+  }
+
+  .statistic table caption img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .statistic table tr th,
+  .statistic table tr td {
+    padding: 0 10px;
+  }
+
+  .statistic table tr td:has(img) {
+    height: 73px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .statistic table tr td img {
+    width: 25px;
+    height: 25px;
+  }
+}
