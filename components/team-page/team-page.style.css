@@ -1,0 +1,242 @@
+.team-page {
+
+}
+
+.team-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.team-page__team-card {
+  padding: 20px 0;
+  box-sizing: border-box;
+  background: linear-gradient(90.21deg, #292929 15.28%, #000000 94.83%);
+  box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04);
+  border-radius: 6px;
+  height: 322px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.team-page__title {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+
+.team-page__logo {
+  height: 90px;
+  width: 90px;
+}
+
+.team-page__stars img {
+  width: 24px;
+  height: 24px;
+}
+
+.team-page__skills {
+  height: 57px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.37768px;
+  line-height: 11px;
+  text-align: center;
+  color: #0B0B0B;
+}
+
+.team-page__skills > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-page__skills > div > img {
+  width: 19px;
+  height: 19px;
+  margin-bottom: 6px;
+}
+
+.team-page__share-button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  line-height: 1px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.team-page__photo {
+  display: block;
+  border-radius: 6px;
+  background-image: url(./assets/images/team-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(0.6 * 100vw);
+}
+
+.team-page__management {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.team-page__manager {
+  min-height: 91px;
+  height: 30vw;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0px 1.59982px 9.19898px rgba(8, 20, 33, 0.04);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  max-width: 220px;
+  padding: 10px 10px 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.team-page__manager-photo {
+  min-width: 51px;
+  width: 20vw;
+}
+
+.team-page__manager-logo {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 10px;
+}
+
+.team-page__manager-team-logo {
+  position: absolute;
+  top: 22px;
+  left: 8px;
+  width: 10px;
+}
+
+.team-page__manager-label {
+  background: #0B0B0B;
+  border-radius: 0px 0px 4px 4px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 28px;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+  box-sizing: border-box;
+  
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.team-page__manager-label span {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1260px) {
+  .team-page__header {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+    
+  .team-page__team-card {
+    padding: 30px 0;
+    border-radius: 8px;
+    height: 346px;
+    width: 272px;
+  }
+
+  .team-page__title {
+    font-size: 28px;
+  }
+
+  .team-page__stars img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .team-page__photo {
+    display: block;
+    border-radius: 6px;
+    background-image: url(./assets/images/team-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 346px;
+  }
+   
+  .team-page__management {
+    gap: 18px;
+  }
+
+  .team-page__manager {
+    max-height: 217px;
+    max-width: 220px;
+    height: 20vw;
+    border-radius: 8px;
+    padding: 20px 20px 60px;
+  }
+
+  .team-page__manager-photo {
+    max-width: 137px;
+    max-height: 140px;
+    width: 20vw;
+  }
+
+  .team-page__manager-logo {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 20px;
+  }
+
+  .team-page__manager-team-logo {
+    position: absolute;
+    top: 43px;
+    left: 13px;
+    width: 20px;
+  }
+
+  .team-page__manager-label {
+    border-radius: 0px 0px 8px 8px;
+    height: 60px;
+    padding: 13px 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
