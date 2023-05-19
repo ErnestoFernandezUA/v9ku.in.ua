@@ -1,12 +1,11 @@
-.team-page {
-
+.team-page > div > * {
+  margin-bottom: 15px;
 }
 
 .team-page__header {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 15px;
 }
 
 .team-page__team-card {
@@ -167,6 +166,48 @@
   text-transform: uppercase;
 }
 
+.team-page__calendar-table {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 12px;
+  text-align: center;
+  border-spacing: 0 2px;
+  padding: 0;
+  margin: 0;
+  /* border: none; */
+  width: 100%;
+}
+
+.team-page__calendar-table tr > *  {
+  box-shadow: 0px 1.87207px 10.7644px rgba(8, 20, 33, 0.04);
+}
+
+.team-page__calendar-table tr > *:first-child {
+  border-radius: 4px 0 0 4px ;
+}
+
+.team-page__calendar-table tr > *:last-child {
+  border-radius: 0 4px 4px 0 ;
+}
+
+.team-page__calendar-table tr td {
+  max-width: 50px;
+}
+
+.team-page__calendar-table tr:has(th) {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #292929;
+}
+
+.team-page__calendar-table tr:has(td) {
+  overflow: hidden;
+  color: #0B0B0B;
+  background: #fff;
+}
+
 @media screen and (min-width: 1260px) {
   .team-page__header {
     display: flex;
@@ -238,5 +279,19 @@
     padding: 13px 0;
     font-size: 16px;
     line-height: 19px;
+  }
+    
+  .team-page__calendar-table {
+    font-size: 14px;
+    line-height: 26px;
+    border-spacing: 0 5px;
+  }
+
+  .team-page__calendar-table tr > *:first-child {
+    border-radius: 4px 0 0 4px ;
+  }
+
+  .team-page__calendar-table tr > *:last-child {
+    border-radius: 0 4px 4px 0 ;
   }
 }
