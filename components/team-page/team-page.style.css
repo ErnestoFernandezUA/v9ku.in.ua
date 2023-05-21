@@ -1,3 +1,5 @@
+@import url(../card-player-full/card-player-full.style.css);
+
 .team-page > div > * {
   margin-bottom: 15px;
 }
@@ -177,7 +179,6 @@
   border-spacing: 0 2px;
   padding: 0;
   margin: 0;
-  /* border: none; */
   width: 100%;
 }
 
@@ -207,6 +208,14 @@
   overflow: hidden;
   color: #0B0B0B;
   background: #fff;
+}
+
+.team-page__squad .container {
+  display: flex;
+  gap: 15px 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
 }
 
 @media screen and (min-width: 1260px) {
@@ -247,17 +256,14 @@
   }
 
   .team-page__manager {
-    max-height: 217px;
-    max-width: 220px;
-    height: 20vw;
+    height: 217px;
+    width: 217px;
     border-radius: 8px;
     padding: 20px 20px 60px;
   }
 
   .team-page__manager-photo {
-    max-width: 137px;
-    max-height: 140px;
-    width: 20vw;
+    max-height: 200px;
   }
 
   .team-page__manager-logo {
@@ -294,5 +300,9 @@
 
   .team-page__calendar-table tr > *:last-child {
     border-radius: 0 4px 4px 0 ;
+  }
+
+  .team-page__squad .container {
+    gap: 30px 14px;
   }
 }
