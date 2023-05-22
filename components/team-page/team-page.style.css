@@ -125,8 +125,6 @@
 }
 
 .team-page__manager-photo {
-  /* min-width: 51px; */
-  /* width: 20vw; */
   max-height: 81px;
 }
 
@@ -216,6 +214,10 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
+}
+
+.team-page__squad .container > *:nth-child(n + 10) {
+  display: none;
 }
 
 @media screen and (min-width: 1260px) {
