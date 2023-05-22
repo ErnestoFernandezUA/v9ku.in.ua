@@ -1,0 +1,245 @@
+.stadiums {
+
+}
+
+.stadiums__title {
+  margin-bottom: 15px;
+}
+
+.stadiums__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 5px;
+  
+}
+
+.stadium-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1.38132px 7.9426px rgba(8, 20, 33, 0.04);
+  border-radius: 2.76264px;
+  overflow: hidden;
+}
+
+.stadium-card__title {
+  background: linear-gradient(90.21deg, #292929 15.28%, #000000 94.83%);
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8.28793px;
+  line-height: 14px;
+  color: #FFFFFF; 
+  text-align: center;
+}
+
+.stadium-card__photo {
+  display: block;
+  width: 100%;
+  height: 30vw;
+  background-image: url(./assets/images/stadium-photo.png);
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+.stadium-card__description {
+  box-sizing: border-box;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+}
+
+.stadium-card__location {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  align-self: center;
+}
+
+.stadium-card__location img {
+  height: 6px;
+}
+
+.stadium-card__location p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5px;
+  line-height: 6px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.stadium-card__facilities {
+  list-style: none;
+  padding: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 6px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stadium-card__facilities li {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px; 
+}
+
+.stadium-card__facilities li img {
+  height: 16px;
+  width: 16px;
+}
+
+.stadium-card__facilities li > img:nth-child(2) {
+  height: 6px;
+  line-height: 6px;
+}
+
+.stadium-card__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stadium-card__phone-button {
+  line-height: 12px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 8px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.stadium-card__phone-button img {
+  height: 12px;
+  width: 12px;
+}
+
+.stadium-card__map-button {
+  line-height: 1px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  height: 12px;
+  width: 12px;
+}
+
+@media screen and (min-width: 1260px) { 
+  .stadiums__title {
+    margin-bottom: 30px;
+  }
+
+  .stadiums__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .stadium-card {
+    border-radius: 8px;
+  }
+
+  .stadium-card__title {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .stadium-card__photo {
+    height: 16vw;
+  }
+
+  .stadium-card__description {
+    padding: 25px 10px;
+    gap: 10px;
+  }
+
+  .stadium-card__location {
+    gap: 8px;
+  }
+
+  .stadium-card__location img {
+    height: 17px;
+  }
+
+  .stadium-card__location p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  .stadium-card__facilities {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .stadium-card__facilities li {
+    gap: 3px;
+    height: 68px; 
+  }
+
+  .stadium-card__facilities li img {
+    height: 48px;
+    width: 48px;
+  }
+
+  .stadium-card__facilities li > img:nth-child(2) {
+    height: 10px;
+    line-height: 10px;
+  }
+
+  .stadium-card__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .stadium-card__phone-button {
+    line-height: 20px;
+    gap: 4px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .stadium-card__phone-button img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .stadium-card__map-button {
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .stadium-card__map-button img {
+    height: 35px;
+    width: 35px;
+  }
+}
