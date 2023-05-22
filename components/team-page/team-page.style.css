@@ -220,6 +220,94 @@
   display: none;
 }
 
+.team-page__reference {
+  background: #FFFFFF;
+  box-shadow: 0px 1.20482px 6.92771px rgba(8, 20, 33, 0.04);
+  border-radius: 2.40964px;
+  padding: 12px;
+  margin: 0;
+}
+
+.team-page__reference--top {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7px;
+  color: #000000;
+
+  max-height: 90px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+} 
+
+.team-page__reference--top li {
+  display: flex;
+  align-items: center;
+  line-height: 13px;
+  padding: 0;
+  margin: 2px 0;
+  gap: 4px;
+  width: fit-content;
+}
+
+.team-page__reference--top li img {
+  width: 13px;
+  height: 13px;
+}
+
+.team-page__reference--bottom {
+  box-sizing: border-box;
+  padding: 12px 0 0;
+  list-style: none;
+  margin: 0;
+  max-height: 95px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: space-around;
+
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 9px;
+  color: #000000;
+}
+
+.team-page__reference--bottom li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.team-page__reference--bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3px;
+  line-height: 4px;
+}
+
+.team-page__reference--bottom img {
+  width: 10px;
+  height: 10px;
+}
+
+.team-page__reference--bottom p {
+  line-height: 16px;
+}
+
 @media screen and (min-width: 1260px) {
   .team-page__header {
     display: flex;
@@ -310,5 +398,52 @@
 
   .team-page__squad > *:nth-child(n + 10) {
     display: block;
+  }
+   
+  .team-page__reference {
+    padding: 40px;
+  }
+
+  .team-page__reference--top {
+    font-size: 18px;
+    line-height: 21px;
+    max-height: 367px;
+    padding-bottom: 40px;
+  } 
+
+  .team-page__reference--top li {
+    line-height: 41px;
+    margin: 16px 0;
+    gap: 20px;
+  }
+
+  .team-page__reference--top li img {
+    width: 41px;
+    height: 41px;
+  }
+
+  .team-page__reference--bottom {
+    padding: 40px 0 0;
+    max-height: 326px;
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .team-page__reference--bottom li {
+    gap: 20px;
+  }
+
+  .team-page__reference--bottom div {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .team-page__reference--bottom img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .team-page__reference--bottom p {
+    line-height: 53px;
   }
 }
