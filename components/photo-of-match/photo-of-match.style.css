@@ -6,6 +6,7 @@
 
 .swiper-photo {
   /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .swiper-photo .swiper-wrapper {
