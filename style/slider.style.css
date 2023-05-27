@@ -1,6 +1,6 @@
 .swiper {
-  width: 100%;
-  position: relative;
+  /* width: 100%;
+  position: relative; */
 }
 
 .swiper-table {
@@ -13,12 +13,12 @@
   background-color: transparent;
 }
 .swiper-slide {
-  display: block;
+  /* display: block; */
   width: auto;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 .swiper-slide--table {
   min-width: 100%;
@@ -66,8 +66,8 @@
 
 @media screen and (min-width: 1260px) {
   .swiper-wrapper {
-    justify-content: space-between;
-    gap: 0;
+    /* justify-content: space-between;
+    gap: 10px; */
   }
 
   .swiper-horizontal {

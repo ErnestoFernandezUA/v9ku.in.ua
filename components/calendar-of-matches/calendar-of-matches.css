@@ -56,12 +56,12 @@
   font-weight: 500;
 }
 
-.calendar-of-matches__preview {
-  display: none;
+.calendar-of-matches__dynamic-content {
+  display: block;
 }
 
 .calendar-of-matches div.swiper-wrapper {
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 @media screen and (min-width: 1260px) {
@@ -80,11 +80,7 @@
     align-self: start;
   }
 
-  .calendar-of-matches div.swiper {
-    overflow: visible;
-  }
-
-  .calendar-of-matches div.swiper-wrapper {
+  .swiper-matches div.swiper-wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -106,8 +102,9 @@
     border-radius: 8px;
   }
 
-  .calendar-of-matches__preview {
-    display: initial;
+  .calendar-of-matches__dynamic-content {
+    display: block;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
   }
-
 }

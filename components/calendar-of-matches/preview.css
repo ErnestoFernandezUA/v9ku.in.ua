@@ -4,6 +4,7 @@
   align-items: center; 
   justify-content: center;
   padding: 200px;
+  border: 1px solid green;
 }
 
 .prewiew__teams {

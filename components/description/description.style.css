@@ -1,0 +1,129 @@
+.description .container > * {
+  display: none;
+  margin-bottom: 15px;
+}
+
+.description__top-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px 4px;
+  align-items: stretch;
+  justify-content: stretch;
+  justify-items: stretch;
+}
+
+.top-section__item {
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.25rem;
+  line-height: 7px;
+  color: #000000;
+  box-shadow: 0px 2.02612px 11.6502px rgba(8, 20, 33, 0.04);
+  text-transform: uppercase;
+}
+
+.top-section__item p {
+  justify-self: flex-start;
+  display: block;
+  line-height: 12px;
+  background-color: #D1D3D4;
+  text-align: center;
+}
+
+.top-section__item div {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.top-section__item img {
+  display: block;
+  height: 35px;
+}
+
+.top-section__item--disqualification p {
+  background-color: #FF3B3B;
+  color: #fff;
+}
+
+.description__middle-section {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 9px;
+  text-transform: uppercase;
+  color: #000000;
+  background: #FFFFFF;
+  box-shadow: 0px 1.38408px 7.95848px rgba(8, 20, 33, 0.04);
+  border-radius: 2.76817px;
+  padding: 16px 13px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 140px;
+} 
+
+.middle-section__item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.middle-section__item img {
+  width: 13px;
+  height: 13px;
+}
+
+.middle-section__item p {
+  max-width: 113px;
+}
+
+.different-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1.3978px 8.03736px rgba(8, 20, 33, 0.04);
+  border-radius: 2.7956px;
+  
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  /* line-height: 8px; */
+  color: #000000;
+}
+
+
+.different-card__item {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.different-card__item div {
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.different-card__item--red div {
+  background-color: #FF3B3B;
+  overflow: hidden;
+  border-radius: 1.54064px;
+  padding: 0;
+  border: none;
+}
+
+.different-card li img {
+  height: 15px;
+  width: 15px;
+}

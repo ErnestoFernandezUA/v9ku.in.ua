@@ -1,8 +1,12 @@
 .body {
   background-color: #FAFAFA;
+  min-width: 320px;
 }
 
-.main > section:not(:first-child) {
+.main {
+}
+
+.main > section {
   margin-bottom: 30px;
 }
 

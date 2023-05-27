@@ -1,6 +1,6 @@
 @import url(../card-player-full/card-player-full.style.css);
 
-.team-page > div > * {
+.team-page > div > *:not(:last-child) {
   margin-bottom: 15px;
 }
 

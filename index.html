@@ -327,7 +327,7 @@
         </div>
       </div>
     </section>
-
+<!-- 
     <section class="ratings">
       <div class="container">
         <h2 class="title">Рейтинги гравців ліги</h2>
@@ -591,7 +591,7 @@
         </div>
       </div>
     </section>
-
+ 
     <section class="table-league">
       <div class="container">
         <h2 class="table-league__title title title--inverse ">
@@ -933,9 +933,8 @@
           <div class="swiper-scrollbar-table"></div>
         </div>
       </div>
-
     </section>
-
+-->
     <section class="calendar-of-matches">
       <div class="container">
         <div>
@@ -988,7 +987,7 @@
             </a>
           </div>
   
-          <div class="swiper swiper--leagues">
+          <div class="swiper swiper-matches">
             <div class="swiper-wrapper calendar-of-matches__list">
               <div class="swiper-slide">
                 <div 
@@ -1360,36 +1359,89 @@
             <div class="swiper-scrollbar"></div>
           </div>
   
-          <div class="calendar-of-matches__preview preview">
-            <div class="prewiew__teams">
-              <div class="preview__team-logo">
-                <img src="./components/calendar-of-matches/assets/images/barcelona-logo.svg" alt="barcelona">
+          <div class="calendar-of-matches__dynamic-content">
+            <!-- <div class="preview">
+              <div class="prewiew__teams">
+                <div class="preview__team-logo">
+                  <img src="./components/calendar-of-matches/assets/images/barcelona-logo.svg" alt="barcelona">
+                </div>
+                <span>VS</span>
+                <div class="preview__team-logo">
+                  <img src="./components/calendar-of-matches/assets/images/bayern-logo.svg" alt="bayern">
+                </div>
               </div>
-              <span>VS</span>
-              <div class="preview__team-logo">
-                <img src="./components/calendar-of-matches/assets/images/bayern-logo.svg" alt="bayern">
+    
+              <h3 class="preview__title title">Анонс</h3>
+    
+              <div class="preview__content">
+                <p>Сподіваємося, що цього разу «Ронін» збереться повним складом, і ми
+                  нарешті зможемо побачити цю команду в дії по-справжньому. 
+                </p>
+                <p>
+                  Її суперником
+                  виступить Brugge, що стартував у новому сезоні поєдинком проти чинного
+                  чемпіана. Зіграв не надто вдало, але ж то був лише перший млинець, що
+                  бува сходить нанівець. Досвід уже який-не-який команда отримала, а
+                  якщо матиме фахового воротаря, то ще проявить себе неодмінно!
+                </p>
               </div>
-            </div>
-  
-            <h3 class="preview__title title">Анонс</h3>
-  
-            <div class="preview__content">
-              <p>Сподіваємося, що цього разу «Ронін» збереться повним складом, і ми
-                нарешті зможемо побачити цю команду в дії по-справжньому. 
-              </p>
-              <p>
-                Її суперником
-                виступить Brugge, що стартував у новому сезоні поєдинком проти чинного
-                чемпіана. Зіграв не надто вдало, але ж то був лише перший млинець, що
-                бува сходить нанівець. Досвід уже який-не-який команда отримала, а
-                якщо матиме фахового воротаря, то ще проявить себе неодмінно!
-              </p>
+            </div> -->
+
+
+            <div class="photo-of-match">
+              <h3 class="title">ФОТО МАТЧУ</h3>
+
+              <!-- Slider main container -->
+              <div class="swiper-photo">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./components/photo-of-match/assets/images/1.png" alt="photo-slider">
+                    <p>Slide 1</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./components/photo-of-match/assets/images/2.png" alt="photo-slider">
+                    <p>Slide 2</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./components/photo-of-match/assets/images/3.png" alt="photo-slider">
+                    <p>Slide 3</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./components/photo-of-match/assets/images/1.png" alt="photo-slider">
+                    <p>Slide 4</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./components/photo-of-match/assets/images/2.png" alt="photo-slider">
+                    <p>Slide 5</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./components/photo-of-match/assets/images/3.png" alt="photo-slider">
+                    <p>Slide 6</p>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination--photo"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar--photo"></div> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+<!-- 
     <section class="selection-zone">
       <div class="container"> 
         <div class="selection-zone__current">
@@ -5908,6 +5960,179 @@
         </div>
       </div>
     </section>
+  -->
+ <!-- 
+    <section class="description">
+      <div class="container">
+        <ul class="description__top-section">
+          <li class="top-section__item">
+            <p>ТОП-ГРАВЕЦЬ</p>
+            <div>
+              <img src="./components/description/assets/images/star-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item">
+            <p>ТОП-ГОЛКІПЕР</p>
+            <div>
+              <img src="./components/description/assets/images/gloves-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item">
+            <p>ТОП-БОМБАРДИР</p>
+            <div>
+              <img src="./components/description/assets/images/football-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item">
+            <p>ТОП-АСИСТЕНТ</p>
+            <div>
+              <img src="./components/description/assets/images/boots-in-circle-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item">
+            <p>ТОП-ЗАХИСНИК</p>
+            <div>
+              <img src="./components/description/assets/images/pitt-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item">
+            <p>ТОП-ПАС</p>
+            <div>
+              <img src="./components/description/assets/images/ball-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item">
+            <p>ТОП-ДРИБЛІНГ</p>
+            <div>
+              <img src="./components/description/assets/images/player-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item">
+            <p>ТОП-ГРАВЕЦЬ</p>
+            <div>
+              <img src="./components/description/assets/images/rocket-ball-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li class="top-section__item top-section__item--disqualification">
+            <p>Дискваліфікація</p>
+            <div>
+              <img src="./components/description/assets/images/red-card-icon.svg" alt="star">
+            </div>
+          </li>
+
+          <li  class="top-section__item top-section__item--disqualification">
+            <p>Дискваліфікація</p>
+            <div>
+              <img src="./components/description/assets/images/tree-yellow-cards-icon.svg" alt="star">
+            </div>
+          </li>
+        </ul>
+
+        <ul class="description__middle-section">
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/yellow-card-icon.svg" alt="">
+            <p>Жовта картка</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/autogoal-icon.svg" alt="">
+            <p>АВТОГОЛ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/boots-icon.svg" alt="">
+            <p>АСИСТ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/football-icon.svg" alt="">
+            <p>ГОЛ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/red-card-icon.svg" alt="">
+            <p>ПРЯМА ЧЕРВОНА КАРТКА</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/yellow-red-card-icon.svg" alt="">
+            <p>ЧЕРВОНА КАРТКА В РЕЗУЛЬТАТІ ОТРИМАННЯ ДРУГОЇ ЖОВТОЇ КАРТКИ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/penalty-6m-icon.svg" alt="">
+            <p>НЕРЕАЛІЗОВАНИЙ 6М ПЕНАЛЬТІ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/penalty-8m-icon.svg" alt="">
+            <p>НЕРЕАЛІЗОВАНИЙ 8М ПЕНАЛЬТІ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/penalty-10m-icon.svg" alt="">
+            <p>НЕРЕАЛІЗОВАНИЙ 10М ПЕНАЛЬТІ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/goal-penalty-6m-icon.svg" alt="">
+            <p>РЕАЛІЗОВАНИЙ 6М ПЕНАЛЬТІ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/goal-penalty-8m-icon.svg" alt="">
+            <p>РЕАЛІЗОВАНИЙ 8М ПЕНАЛЬТІ</p>
+          </li>
+
+          <li class="middle-section__item">
+            <img src="./components/description/assets/images/goal-penalty-10m-icon.svg" alt="">
+            <p>РЕАЛІЗОВАНИЙ 10М ПЕНАЛЬТІ</p>
+          </li>
+        </ul>
+
+        <div class="description__different-card">
+          <ul class="different-card">
+            <li class="different-card__item different-card__item--red">
+              <div>
+                <img src="./components/description/assets/images/anonse-icon.svg" alt="">
+              </div>
+
+              <p>АНОНС МАТЧУ</p>
+            </li>
+
+            <li class="different-card__item different-card__item--yellow">
+              <div>
+                <img src="./components/description/assets/images/statistic-icon.svg" alt="">
+              </div>
+
+              <p>СТАТИСТИКА МАТЧУ</p>
+            </li>
+
+            <li class="different-card__item different-card__item--yellow">
+              <div>
+                <img src="./components/description/assets/images/kkd-icon.svg" alt="">
+              </div>
+
+              <p>СТАТИСТИКА МАТЧУ</p>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="description__bottom-section">
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+ -->
   </main>
   
   <footer class="footer">
@@ -5919,6 +6144,11 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/variables.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/swiper-nav.js"></script>
+  <script src="./js/swiper-leagues.js"></script>
+  <script src="./js/swiper-matches.js"></script>
+  <script src="./js/swiper-photo.js"></script>
 </body>
 </html>               

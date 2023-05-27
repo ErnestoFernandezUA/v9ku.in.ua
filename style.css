@@ -22,3 +22,6 @@
 @import url(./components/statistic/statistic.style.css);
 @import url(./components/team-page/team-page.style.css);
 @import url(./components/stadiums/stadiums.style.css);
+/* @import url(./components/description/description.style.css); */
+
+@import url(./components/photo-of-match/photo-of-match.style.css);

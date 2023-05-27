@@ -1,0 +1,129 @@
+.photo-of-match {
+  /* display: block; */
+  /* width: 100%; */
+  position: relative;
+}
+
+.swiper-photo {
+  /* overflow: hidden; */
+}
+
+.swiper-photo .swiper-wrapper {
+  /* overflow: hidden; */
+  /* position: relative; */
+  /* min-width: 0; */
+
+}
+
+.swiper-photo .swiper-slide {
+  /* height: 60%; */
+  /* max-height: 200px; */
+  /* box-sizing: border-box; */
+  /* border: 1px solid red; */
+  width: auto;
+  
+  max-width: 100%;
+}
+
+.swiper-photo .swiper-slide img {
+  /* height: 100%; */
+  width: 100%;
+  /* object-fit: cover; */
+  /* padding: 0; */
+ 
+  /* box-sizing: border-box; */
+}
+
+.swiper-photo .swiper-button-prev,
+.swiper-photo .swiper-button-next {
+  position: absolute;
+  top: 170px;
+  padding: 0;
+  height: 10px;
+  width: 10px;
+}
+
+.swiper-button-prev {
+  left: 5px;
+}
+
+.swiper-button-next {
+  right: 5px;
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+  display: block;
+  color: black;
+  opacity: 0.8;
+  font-size: 8px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0, 0.8);
+}
+
+
+.swiper-button-prev::after {
+  padding: 5px 8px 3px 6px;
+}
+
+.swiper-button-next::after {
+  padding: 5px 6px 3px 8px;
+}
+
+@media screen and (min-width: 1260px) {
+  .photo-of-match {
+   
+  }
+  
+  .swiper-photo {
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+    top: 0;  
+    width: calc(100%);
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  
+  .swiper-photo .swiper-wrapper {
+    /* overflow: hidden; */
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* min-width: 0; */
+    /* max-width: 100px; */
+  }
+  
+  .swiper-photo .swiper-slide {
+    /* height: 60%; */
+    /* max-height: 200px; */
+    /* box-sizing: border-box; */
+    /* border: 1px solid red; */
+    /* width: auto; */
+    
+    /* max-width: 100%; */
+    /* border: 1px solid blue; */
+  }
+  
+  .swiper-photo .swiper-slide img {
+    /* height: 100%; */
+    /* width: 100%; */
+    /* object-fit: cover; */
+    /* padding: 0; */
+   
+    /* box-sizing: border-box; */
+    border-radius: 8px;
+  }
+
+  .swiper-button-prev {
+    left: 5px;
+  }
+  
+  .swiper-button-next {
+    right: 5px;
+    
+  }
+}
