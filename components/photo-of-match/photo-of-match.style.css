@@ -1,38 +1,20 @@
 .photo-of-match {
-  /* display: block; */
-  /* width: 100%; */
   position: relative;
 }
 
 .swiper-photo {
-  /* overflow: hidden; */
   overflow: hidden;
 }
 
 .swiper-photo .swiper-wrapper {
-  /* overflow: hidden; */
-  /* position: relative; */
-  /* min-width: 0; */
-
 }
 
 .swiper-photo .swiper-slide {
-  /* height: 60%; */
-  /* max-height: 200px; */
-  /* box-sizing: border-box; */
-  /* border: 1px solid red; */
-  width: auto;
-  
-  max-width: 100%;
+  /* padding: 0 20px; */
 }
 
 .swiper-photo .swiper-slide img {
-  /* height: 100%; */
   width: 100%;
-  /* object-fit: cover; */
-  /* padding: 0; */
- 
-  /* box-sizing: border-box; */
 }
 
 .swiper-photo .swiper-button-prev,
@@ -80,33 +62,12 @@
   }
   
   .swiper-photo {
-    overflow: hidden;
-    position: absolute;
-    left: 20px;
-    top: 0;  
-    width: calc(100%);
-    padding: 0 20px;
-    box-sizing: border-box;
-    border-radius: 8px;
   }
   
   .swiper-photo .swiper-wrapper {
-    /* overflow: hidden; */
-    /* overflow: hidden; */
-    /* position: relative; */
-    /* min-width: 0; */
-    /* max-width: 100px; */
   }
   
   .swiper-photo .swiper-slide {
-    /* height: 60%; */
-    /* max-height: 200px; */
-    /* box-sizing: border-box; */
-    /* border: 1px solid red; */
-    /* width: auto; */
-    
-    /* max-width: 100%; */
-    /* border: 1px solid blue; */
   }
   
   .swiper-photo .swiper-slide img {
@@ -126,5 +87,52 @@
   .swiper-button-next {
     right: 5px;
     
+  }
+}
+
+.swiper {
+  /* width: 100%;
+  position: relative; */
+}
+/* 
+.swiper-table {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+} */
+
+.swiper-slide {
+}
+.swiper-slide--table {
+} 
+
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+
+.swiper-bg-scroll {
+}
+
+.swiper-scrollbar {
+}
+
+@media screen and (min-width: 1260px) {
+  .swiper-wrapper {
+    /* justify-content: space-between;
+    gap: 10px; */
+  }
+
+  .swiper-photo .swiper-slide {
+    padding: 0 20px;
+  }
+
+  .swiper-horizontal {
   }
 }

@@ -1,15 +1,29 @@
 @import url(../card-of-matches/card-of-matches.css);
 @import url(./preview.css);
 
-.calendar-of-matches .title {
-  margin-bottom: 10px; 
+.calendar-of-matches {
+
 }
 
-.calendar-of-matches__buttons {
+.calendar-of-matches__grid-container {
+  /* border: 1px solid red; */
+  display: block;
+}
+
+.calendar-of-matches__head {
+  margin-bottom: 10px;
+}
+
+.calendar-of-matches__head-nav {
   display: flex;
   gap: 2px;
   justify-content: space-between;
   margin-bottom: 25px;
+  border: 1px solid red;
+}
+
+.calendar-of-matches__aside {
+  border: 1px solid green;
 }
 
 .calendar-of-matches__button {
@@ -65,13 +79,18 @@
 }
 
 @media screen and (min-width: 1260px) {
-  .calendar-of-matches > div.container > div {
+  .calendar-of-matches__head {
+    margin-bottom: 0px;
+  }
+
+  /* .calendar-of-matches > div.container > div, */
+  .calendar-of-matches__grid-container {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 10px 57px;
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04);
+    gap: 30px 30px;
+    /* padding: 40px; */
+    /* background-color: #fff; */
+    /* box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04); */
     border-radius: 8px;
   }
 
@@ -91,7 +110,7 @@
   }
 
 
-  .calendar-of-matches__buttons {
+  .calendar-of-matches__head-nav {
     gap: 10px;
     margin-bottom: 0;
   }
@@ -103,8 +122,9 @@
   }
 
   .calendar-of-matches__dynamic-content {
-    display: block;
-    /* border: 1px solid red; */
-    /* overflow: hidden; */
+    position: relative;
+    /* max-width: 1140px; */
+    border: 1px solid red;
+    overflow: hidden;
   }
 }
