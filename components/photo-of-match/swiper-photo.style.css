@@ -4,7 +4,6 @@
 
 .swiper-photo .swiper-wrapper {
   margin-bottom: 10px;
-
 }
 
 .swiper-photo .swiper-slide img {
@@ -94,12 +93,12 @@
 
  
   .swiper-photo .swiper-button-prev {
-    top: calc(50% - 80px / 2);
+    top: calc(50% - 80px);
     left: 10px;
   }
   
   .swiper-photo .swiper-button-next {
-    top: calc(50% - 80px / 2);
+    top: calc(50% - 80px);
     right: 40px;
   }
 
@@ -114,5 +113,6 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #292929;
+    margin-bottom: 10px;
   }
 }
