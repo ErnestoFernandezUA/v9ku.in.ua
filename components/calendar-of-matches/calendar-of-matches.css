@@ -23,6 +23,7 @@
 }
 
 .calendar-of-matches__aside {
+  margin-bottom: 30px;
 }
 
 .calendar-of-matches__dynamic-content {
@@ -98,6 +99,10 @@
 
   .calendar-of-matches__head-nav {
     margin: 0;
+  }
+
+  .calendar-of-matches__aside {
+    margin-bottom: 0px;
   }
 
   .calendar-of-matches__grid-container {

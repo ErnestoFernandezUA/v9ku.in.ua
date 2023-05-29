@@ -3,7 +3,6 @@ new Swiper('.swiper-photo', {
   slidesPerView: 1,
   spaceBetween: 20,
   speed: 400,
-  // height: 200,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -20,6 +19,10 @@ new Swiper('.swiper-photo', {
     //   forceToAxis: true,
     // },
     },
+  pagination: {
+    el: '.swiper-pagination--photo',
+    type: 'fraction',
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -29,15 +32,6 @@ new Swiper('.swiper-photo', {
     },
     1260: {
       slidesPerView: 1,
-      scrollbar: {
-        // hide: true,
-        // grid: {
-        //   rows: 3,
-        // },
-        // mousewheel: {
-        //   forceToAxis: true,
-        // },
-        },
     }
   },
 });

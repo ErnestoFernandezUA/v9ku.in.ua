@@ -1,127 +1,21 @@
+@import url(./swiper-photo.style.css);
+
 .photo-of-match {
-  position: relative;
   margin: 0 10px;
 }
 
-.swiper-photo {
-  /* overflow: hidden; */
+.photo-of-match__title {
+  margin-bottom: 10px;
 }
 
-.swiper-photo .swiper-wrapper {
-}
-
-.swiper-photo .swiper-slide {
-  /* padding: 0 20px; */
-}
-
-.swiper-photo .swiper-slide img {
-  width: 100%;
-}
-
-.swiper-photo .swiper-button-prev,
-.swiper-photo .swiper-button-next {
-  position: absolute;
-  top: 170px;
-  padding: 0;
-  height: 10px;
-  width: 10px;
-}
-
-.swiper-button-prev {
-  left: 5px;
-}
-
-.swiper-button-next {
-  right: 5px;
-}
-
-.swiper-button-prev::after, 
-.swiper-button-next::after {
-  display: block;
-  color: black;
-  opacity: 0.8;
-  font-size: 8px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-  border: 1px solid rgb(0, 0, 0, 0.8);
-}
-
-
-.swiper-button-prev::after {
-  padding: 5px 8px 3px 6px;
-}
-
-.swiper-button-next::after {
-  padding: 5px 6px 3px 8px;
-}
 
 @media screen and (min-width: 1260px) {
   .photo-of-match {
-   
-  }
-  
-  .swiper-photo {
-  }
-  
-  .swiper-photo .swiper-wrapper {
-  }
-  
-  .swiper-photo .swiper-slide {
-  }
-  
-  .swiper-photo .swiper-slide img {
-    /* height: 100%; */
-    /* width: 100%; */
-    /* object-fit: cover; */
-    /* padding: 0; */
-   
-    /* box-sizing: border-box; */
-    border-radius: 8px;
+    margin: 40px 40px;
   }
 
-  .swiper-button-prev {
-    left: 5px;
-  }
-  
-  .swiper-button-next {
-    right: 5px;
-    
+  .photo-of-match__title {
+    margin-bottom: 23px;
   }
 }
 
-.swiper {
-}
-.swiper-table {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
-.photo-of-match .swiper-wrapper {
-  margin-bottom: 10px;
-}
-.photo-of-match .swiper-scrollbar {
-  /* border: 1px solid red; */
-}
-
-@media screen and (min-width: 1260px) {
-  .swiper-wrapper {
-    /* justify-content: space-between;
-    gap: 10px; */
-  }
-
-  .swiper-photo .swiper-slide {
-    padding: 0 20px;
-  }
-
-  .swiper-horizontal {
-  }
-}

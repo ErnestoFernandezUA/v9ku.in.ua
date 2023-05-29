@@ -1,5 +1,113 @@
 .swiper-photo {
+  position: relative;
+}
+
+.swiper-photo .swiper-wrapper {
+  margin-bottom: 10px;
 
 }
 
-@media screen and (min-width: 1260px) {}
+.swiper-photo .swiper-slide img {
+  max-width: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.swiper-photo .swiper-button-prev,
+.swiper-photo .swiper-button-next {
+  position: absolute;
+  top: calc(50% - 8px / 2);
+  padding: 0;
+  height: 10px;
+  width: 10px;
+}
+
+.swiper-photo .swiper-button-prev {
+  left: 5px;
+}
+
+.swiper-photo .swiper-button-next {
+  right: 5px;
+}
+
+.swiper-photo .swiper-button-prev::after, 
+.swiper-photo .swiper-button-next::after {
+  display: block;
+  color: black;
+  opacity: 0.8;
+  font-size: 8px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(0, 0, 0, 0.8); */
+}
+
+.swiper-photo .swiper-button-prev::after {
+  padding: 5px 8px 3px 6px;
+}
+
+.swiper-photo .swiper-button-next::after {
+  padding: 5px 6px 3px 8px;
+}
+
+.swiper-photo .swiper-scrollbar {
+  bottom: -10px;
+}
+
+@media screen and (min-width: 1260px) {
+  .swiper-photo {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .swiper-photo .swiper-slide {
+    padding: 0 70px;
+  }
+
+  .swiper-photo .swiper-slide > img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .swiper-photo .swiper-scrollbar {
+    display: none;
+  }
+
+  .swiper-photo .swiper-button-prev::after, 
+  .swiper-photo .swiper-button-next::after {
+    font-size: 80px;
+    
+  }
+
+  .swiper-photo .swiper-button-prev::after {
+  }
+
+  .swiper-photo .swiper-button-next::after {
+  }
+
+ 
+  .swiper-photo .swiper-button-prev {
+    top: calc(50% - 80px / 2);
+    left: 10px;
+  }
+  
+  .swiper-photo .swiper-button-next {
+    top: calc(50% - 80px / 2);
+    right: 40px;
+  }
+
+  .swiper-photo .swiper-pagination--photo {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+  }
+}
