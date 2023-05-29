@@ -1,10 +1,12 @@
+@import url(./swiper-league.style.css);
+
 .leagues {
   background-color: transparent;
 }
 
 .leagues__item {
   display: flex;
-  /* user-select: none; */
+  user-select: none;
   min-width: 103px;
 }
 
@@ -56,12 +58,6 @@
 }
 
 @media screen and (min-width: 1260px) {
-  .leagues div.swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
-  }
-
   .leagues__item {
     min-width: 130px;
   }

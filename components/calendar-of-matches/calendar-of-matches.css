@@ -1,8 +1,9 @@
 @import url(../card-of-matches/card-of-matches.css);
 @import url(./preview.css);
+@import url(./swiper-matches.style.css);
+
 
 .calendar-of-matches {
-
 }
 
 .calendar-of-matches__grid-container {
@@ -11,19 +12,21 @@
 }
 
 .calendar-of-matches__head {
-  margin-bottom: 10px;
+  margin: 0 10px 10px;
 }
 
 .calendar-of-matches__head-nav {
   display: flex;
   gap: 2px;
   justify-content: space-between;
-  margin-bottom: 25px;
-  border: 1px solid red;
+  margin: 0 10px 25px;
 }
 
 .calendar-of-matches__aside {
-  border: 1px solid green;
+}
+
+.calendar-of-matches__dynamic-content {
+  display: block;
 }
 
 .calendar-of-matches__button {
@@ -43,6 +46,10 @@
   margin: 0;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.calendar-of-matches__button {
+  background-color: #fff;
 }
 
 .calendar-of-matches__button--past {
@@ -70,28 +77,33 @@
   font-weight: 500;
 }
 
-.calendar-of-matches__dynamic-content {
-  display: block;
-}
-
-.calendar-of-matches div.swiper-wrapper {
-  /* gap: 10px; */
-}
-
 @media screen and (min-width: 1260px) {
-  .calendar-of-matches__head {
-    margin-bottom: 0px;
+  .calendar-of-matches {
+    max-width: 1440px;
+    margin: 0 50px;
   }
 
-  /* .calendar-of-matches > div.container > div, */
+  .calendar-of-matches__head {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .calendar-of-matches__head .title {
+    margin-bottom: 0px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .calendar-of-matches__head-nav {
+    margin: 0;
+  }
+
   .calendar-of-matches__grid-container {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 30px 30px;
-    /* padding: 40px; */
-    /* background-color: #fff; */
-    /* box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04); */
-    border-radius: 8px;
+    grid-template-columns: 303px 1fr;
+    gap: 30px 27px;
   }
 
   .calendar-of-matches__title {
@@ -123,8 +135,17 @@
 
   .calendar-of-matches__dynamic-content {
     position: relative;
-    /* max-width: 1140px; */
-    border: 1px solid red;
     overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04);
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .calendar-of-matches {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

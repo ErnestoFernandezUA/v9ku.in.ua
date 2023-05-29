@@ -1,7 +1,7 @@
-const swipersLeagues = document.querySelectorAll('.swiper--leagues');
+const swipersLeagues = document.querySelectorAll('.swiper-leagues');
 
 if (!swipersLeagues.length) {
-  console.error('class .swiper--leagues is not found');
+  console.error('class .swiper-leagues is not found');
 }
 
 swipersLeagues.forEach(el => new Swiper(el, {

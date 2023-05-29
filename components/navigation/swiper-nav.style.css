@@ -1,0 +1,14 @@
+.swiper-nav .swiper-slide:last-child {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1260px) {
+  .swiper-nav {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  .swiper-nav .swiper-slide:last-child {
+    margin-right: 0px;
+  }
+}

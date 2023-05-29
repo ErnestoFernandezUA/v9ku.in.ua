@@ -1,9 +1,10 @@
 .photo-of-match {
   position: relative;
+  margin: 0 10px;
 }
 
 .swiper-photo {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .swiper-photo .swiper-wrapper {
@@ -91,36 +92,24 @@
 }
 
 .swiper {
-  /* width: 100%;
-  position: relative; */
 }
-/* 
 .swiper-table {
-  overflow: hidden;
 }
-
 .swiper-wrapper {
-  padding: 0;
-  box-sizing: border-box;
-  background-color: transparent;
-} */
-
+}
 .swiper-slide {
 }
-.swiper-slide--table {
-} 
-
 .swiper-pagination {
 }
 .swiper-button-prev {
 }
 .swiper-button-next {
 }
-
-.swiper-bg-scroll {
+.photo-of-match .swiper-wrapper {
+  margin-bottom: 10px;
 }
-
-.swiper-scrollbar {
+.photo-of-match .swiper-scrollbar {
+  /* border: 1px solid red; */
 }
 
 @media screen and (min-width: 1260px) {

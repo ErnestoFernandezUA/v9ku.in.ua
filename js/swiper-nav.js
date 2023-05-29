@@ -1,4 +1,4 @@
-const swipers = document.querySelectorAll('.swiper--nav');
+const swipers = document.querySelectorAll('.swiper-nav');
   
 swipers.forEach(el => new Swiper(el, {
   enabled: Boolean(window.innerWidth < 1440),

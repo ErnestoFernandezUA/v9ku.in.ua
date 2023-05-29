@@ -29,6 +29,15 @@ new Swiper('.swiper-photo', {
     },
     1260: {
       slidesPerView: 1,
+      scrollbar: {
+        // hide: true,
+        // grid: {
+        //   rows: 3,
+        // },
+        // mousewheel: {
+        //   forceToAxis: true,
+        // },
+        },
     }
   },
 });

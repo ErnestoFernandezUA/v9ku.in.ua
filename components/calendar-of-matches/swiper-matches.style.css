@@ -1,0 +1,17 @@
+.swiper-matches .swiper-slide:first-child {
+  margin-left: 10px;
+}
+
+.swiper-matches .swiper-slide:last-child {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1260px) {
+  .swiper-matches .swiper-slide:first-child {
+    margin-left: 0;
+  }
+  
+  .swiper-matches .swiper-slide:last-child {
+    margin-right: 0;
+  }
+}

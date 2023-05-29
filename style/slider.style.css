@@ -1,6 +1,4 @@
 .swiper {
-  /* width: 100%;
-  position: relative; */
 }
 
 .swiper-table {
@@ -13,12 +11,10 @@
   background-color: transparent;
 }
 .swiper-slide {
-  /* display: block; */
   width: auto;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* flex-shrink: 0; */
 }
 .swiper-slide--table {
   min-width: 100%;
@@ -37,12 +33,11 @@
 }
 
 .swiper-scrollbar {
-  margin: 0 6px;
   padding: 0;
   box-sizing: border-box;
   max-height: 3px;
   background-color: transparent;
-  position: absolute;
+  /* position: absolute; */
   top: 120px;
 }
 

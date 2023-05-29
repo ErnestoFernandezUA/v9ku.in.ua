@@ -25,11 +25,18 @@
   margin: 0;
 }
 
+.container--slider {
+  margin-right: 0;
+}
+
 @media screen and (min-width: 1260px) {
   .container {
     margin: 0 50px;
-    /* max-width: 1340px; */
-  } 
+  }
+  
+  .container--slider {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
