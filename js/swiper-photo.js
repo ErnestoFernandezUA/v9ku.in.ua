@@ -1,8 +1,8 @@
 new Swiper('.swiper-photo', {
   enabled: true,
   slidesPerView: 1,
-  spaceBetween: 20,
-  speed: 400,
+  spaceBetween: 140,
+  speed: 800,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -11,6 +11,7 @@ new Swiper('.swiper-photo', {
   scrollbar: {
     el: '.swiper-scrollbar',
     dragSize: 70,
+    draggable: true,
     // hide: true,
     // grid: {
     //   rows: 3,
@@ -23,13 +24,36 @@ new Swiper('.swiper-photo', {
     el: '.swiper-pagination--photo',
     type: 'fraction',
   },
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewPort: true,
+    pageUpDown: false,
+  },
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: ".swiper-photo",
+
+  },
+  // autoHeight: true,
+  watchOverflow: true,
+  // loop: true,
+  // autoplay: {
+  //   delay: 1000,
+  //   pauseOnMouseEnter: true,
+  //   stopOnLastSlide: true,
+  // },
+  
+  setWrapperSize: true,
+  // effect: 'coverflow',
+
   breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
+    // 640: {
+    //   slidesPerView: 2,
+    // },
+    // 1024: {
+    //   slidesPerView: 3,
+    // },
     1260: {
       slidesPerView: 1,
     }
