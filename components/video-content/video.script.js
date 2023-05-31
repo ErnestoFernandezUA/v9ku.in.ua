@@ -44,7 +44,7 @@ r(function(){
             if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
             iframe.setAttribute("src",iframe_url);
             iframe.setAttribute("frameborder",'0');
-            iframe.setAttribute("allow",'autoplay');
+            iframe.setAttribute("allow",'autoplay; fullscreen');
             iframe.style.width  = this.style.width;
             iframe.style.height = this.style.height;
             this.parentNode.replaceChild(iframe, this);
