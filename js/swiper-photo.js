@@ -2,16 +2,16 @@ new Swiper('.swiper-photo', {
   enabled: true,
   slidesPerView: 1,
   spaceBetween: 140,
-  speed: 800,
+  speed: 400,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   // centeredSlides: true,
   scrollbar: {
-    el: '.swiper-scrollbar',
-    dragSize: 70,
-    draggable: true,
+    // el: '.swiper-scrollbar',
+    // dragSize: 70,
+    // draggable: true,
     // hide: true,
     // grid: {
     //   rows: 3,

@@ -11,20 +11,20 @@
 
 .photo-of-match__upload {
   display: flex;
-  gap: 15px;
+  gap: 5px;
   align-items: center;
   justify-content: stretch;
-  /* margin-bottom: 29px; */
+  padding: 0 24px;
 }
 
 .photo-of-match__upload-button {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 6px;
   background-color: #fff;
   border-radius: 4px;
-  line-height: 40px;
+  line-height: 20px;
   border: 1px solid #E5E5E5;
   box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04);
   width: 100%;
@@ -52,7 +52,7 @@
   
   .photo-of-match__upload-button {
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 8px;
     line-height: 40px;
     width: 100%;
   }
