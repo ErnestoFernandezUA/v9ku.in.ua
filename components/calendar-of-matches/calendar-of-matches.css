@@ -106,6 +106,10 @@
     margin-bottom: 0px;
   }
 
+  .calendar-of-matches__dynamic-content {
+    padding: 40px;
+  }  
+
   .calendar-of-matches__grid-container {
     display: grid;
     grid-template-columns: 303px 1fr;

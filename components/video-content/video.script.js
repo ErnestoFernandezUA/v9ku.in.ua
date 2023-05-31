@@ -1,8 +1,9 @@
 'use strict';
+const breakpoint = 1260;
+
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
 r(function(){
     if (!document.getElementsByClassName) {
-        // Поддержка IE8
         var getElementsByClassName = function(node, classname) {
             var a = [];
             var re = new RegExp('(^| )'+classname+'( |$)');
@@ -17,23 +18,35 @@ r(function(){
     }
     var nb_videos = videos.length;
     for (var i=0; i < nb_videos; i++) {
-        // Находим постер для видео, зная ID нашего видео
         videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
-        // Размещаем над постером кнопку Play, чтобы создать эффект плеера
+
+        if (innerWidth < breakpoint) {
+          videos[i].style.width = `${innerWidth - 20}px`;
+          videos[i].style.height = `${(innerWidth - 20) * 281 / 500}px`;
+          videos[i].style.backgroundSize = 'cover';
+        } else {
+          const widthParentNode = videos[i].parentNode.clientWidth;
+
+          videos[i].style.width = `${widthParentNode - 150}px`;
+          videos[i].style.height = `${(widthParentNode - 150) * 281 / 500}px`;
+          videos[i].style.backgroundSize = 'cover';
+        }
+
+        var button = document.createElement("div");
+        button.setAttribute("class","play-button");
         var play = document.createElement("div");
+        play.appendChild(button);
         play.setAttribute("class","play");
         videos[i].appendChild(play);
         videos[i].onclick = function() {
-            // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
             var iframe = document.createElement("iframe");
             var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
             if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
             iframe.setAttribute("src",iframe_url);
             iframe.setAttribute("frameborder",'0');
-            // Высота и ширина iFrame будет как у элемента-родителя
+            iframe.setAttribute("allow",'autoplay');
             iframe.style.width  = this.style.width;
             iframe.style.height = this.style.height;
-            // Заменяем начальное изображение (постер) на iFrame
             this.parentNode.replaceChild(iframe, this);
         }
     }
