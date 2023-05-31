@@ -1,6 +1,8 @@
 @import url(../card-of-matches/card-of-matches.css);
 @import url(./preview.css);
 @import url(./swiper-matches.style.css);
+@import url(../photo-of-match/photo-of-match.style.css);
+@import url(../video-content/video-content.style.css);
 
 
 .calendar-of-matches {
