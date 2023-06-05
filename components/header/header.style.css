@@ -302,6 +302,7 @@
 
 .button--v9ku-logo img {
   height: 36px;
+  display: none;
 }
 @media screen and (min-width: 1260px) {
   .button--v9ku-logo img {
