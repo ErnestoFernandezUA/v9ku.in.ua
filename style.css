@@ -23,3 +23,5 @@
 @import url(./components/team-page/team-page.style.css);
 @import url(./components/stadiums/stadiums.style.css);
 /* @import url(./components/description/description.style.css); */
+
+@import url(./components/match/match.style.css);
