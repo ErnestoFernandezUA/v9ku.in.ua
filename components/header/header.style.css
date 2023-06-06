@@ -57,7 +57,9 @@
   line-height: 12px;
 }
 
-.nav__title-block strong {
+.nav__title-block a {
+  text-decoration: none;
+  color: #fff;
   font-weight: 700;
 }
 
