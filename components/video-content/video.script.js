@@ -23,6 +23,8 @@ r(function(){
   for (var i=0; i < nb_videos; i++) {
     videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
 
+    console.log(innerWidth);
+
     if (innerWidth < breakpoint) {
       videos[i].style.width = `${innerWidth - 20}px`;
       videos[i].style.height = `${(innerWidth - 20) * 281 / 500}px`;
