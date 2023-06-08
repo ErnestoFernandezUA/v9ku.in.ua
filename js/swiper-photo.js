@@ -30,11 +30,14 @@ new Swiper('.swiper-photo', {
     onlyInViewPort: true,
     pageUpDown: false,
   },
-  mousewheel: {
-    sensitivity: 1,
-    eventsTarget: ".swiper-photo",
 
-  },
+  //error: Added non-passive event listener to a scroll-blocking 'wheel' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
+  // mousewheel: {
+  //   sensitivity: 1,
+  //   eventsTarget: ".swiper-photo",
+
+  // },
+  
   // autoHeight: true,
   watchOverflow: true,
   // loop: true,
