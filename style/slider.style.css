@@ -37,8 +37,6 @@
   box-sizing: border-box;
   max-height: 3px;
   background-color: transparent;
-  /* position: absolute; */
-  top: 120px;
 }
 
 .swiper-scrollbar-table {

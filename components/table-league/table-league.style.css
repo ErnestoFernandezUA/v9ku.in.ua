@@ -1,8 +1,10 @@
+@import url(./swiper-table.style.css);
+
 .table-league__title {
   padding: 12px;
   border-radius: 5px;
   background-color: #000;
-  margin-bottom: 15px;
+  margin: 0 10px 15px;
 }
 
 .table-league__title > span:last-child {
