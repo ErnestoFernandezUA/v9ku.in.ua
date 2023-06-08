@@ -1,3 +1,7 @@
+.swiper-nav {
+  overflow: visible;
+}
+
 .swiper-nav .swiper-slide:last-child {
   margin-right: 10px;
 }
