@@ -24,7 +24,6 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
-  /* box-shadow: 0px 4px 23px rgba(8, 20, 33, 0.04); it`s need??? */
 }
 
 .table-league__table tr:first-child {
@@ -169,7 +168,6 @@
   }
 
   .table-league__table tr:nth-child(2n + 3) {
-    /* it's same with main background color */
     background: rgba(255, 255, 255, 0.05);
   }
     

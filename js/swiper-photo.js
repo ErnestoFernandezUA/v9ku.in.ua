@@ -35,9 +35,8 @@ new Swiper('.swiper-photo', {
   // mousewheel: {
   //   sensitivity: 1,
   //   eventsTarget: ".swiper-photo",
-
   // },
-  
+
   // autoHeight: true,
   watchOverflow: true,
   // loop: true,
