@@ -39,11 +39,6 @@
   background-color: #0B0B0B;
 }
 
-.navigation__item:has(.broadcast) {
-  /* padding: 0 10px; */
-  box-sizing: border-box;
-}
-
 .broadcast {
   height: 30px;
   padding: 0 10px;
