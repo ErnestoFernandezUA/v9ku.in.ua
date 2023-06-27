@@ -16,7 +16,7 @@
 .stadium-card {
   background: #FFFFFF;
   box-shadow: 0px 1.38132px 7.9426px rgba(8, 20, 33, 0.04);
-  border-radius: 2.76264px;
+  border-radius: var(--border-radius-s);
   overflow: hidden;
 }
 
@@ -26,7 +26,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 8.28793px;
+  font-size: var(--font-size-s);
   line-height: 14px;
   color: #FFFFFF; 
   text-align: center;
@@ -69,7 +69,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 5px;
+  font-size: var(--font-size-xs);
   line-height: 6px;
   text-align: center;
   color: #000000;
@@ -82,7 +82,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 5px;
+  font-size: var(--font-size-xs);
   line-height: 6px;
   text-align: center;
   color: #000000;
@@ -129,7 +129,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 500;
-  font-size: 7px;
+  font-size: var(--font-size-xs);
   line-height: 8px;
   text-align: center;
 
@@ -164,11 +164,11 @@
   }
 
   .stadium-card {
-    border-radius: 8px;
+    border-radius: var(--border-radius-l);
   }
 
   .stadium-card__title {
-    font-size: 24px;
+    font-size: var(--font-size-xxxl);
     line-height: 50px;
   }
 
@@ -190,12 +190,12 @@
   }
 
   .stadium-card__location p {
-    font-size: 16px;
+    font-size: var(--font-size-xl);
     line-height: 17px;
   }
 
   .stadium-card__facilities {
-    font-size: 14px;
+    font-size: var(--font-size-l);
     line-height: 16px;
   }
 
@@ -223,7 +223,7 @@
   .stadium-card__phone-button {
     line-height: 20px;
     gap: 4px;
-    font-size: 20px;
+    font-size: var(--font-size-xxxl);
     line-height: 35px;
   }
 

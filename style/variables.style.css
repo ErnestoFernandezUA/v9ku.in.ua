@@ -1,3 +1,21 @@
 :root {
   --z-index-top-button-fixed: 9000;
+
+
+  --border-radius-s: 3px;
+  --border-radius-m: 4px;
+  --border-radius-l: 8px;
+
+
+  --box-shadow-s:  0px 2px 11px rgba(8, 20, 33, 0.04);
+  --box-shadow-m:  0px 4px 23px rgba(8, 20, 33, 0.04);
+
+  --font-size-xs: 6px;
+  --font-size-s: 10px;
+  --font-size-m: 12px;
+  --font-size-l: 14px;
+  --font-size-xl: 16px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 24px;
+
 }

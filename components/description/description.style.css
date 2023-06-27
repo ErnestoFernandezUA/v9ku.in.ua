@@ -13,12 +13,12 @@
 }
 
 .top-section__item {
-  border-radius: 4px;
+  border-radius: var(--border-radius-m);
   overflow: hidden;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 0.25rem;
+  font-size: var(--font-size-l);
   line-height: 7px;
   color: #000000;
   box-shadow: 0px 2.02612px 11.6502px rgba(8, 20, 33, 0.04);
@@ -55,13 +55,13 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 500;
-  font-size: 7px;
+  font-size: var(--font-size-xs);
   line-height: 9px;
   text-transform: uppercase;
   color: #000000;
   background: #FFFFFF;
   box-shadow: 0px 1.38408px 7.95848px rgba(8, 20, 33, 0.04);
-  border-radius: 2.76817px;
+  border-radius: var(--border-radius-s);
   padding: 16px 13px;
 
   display: flex;
@@ -89,12 +89,12 @@
 .different-card {
   background: #FFFFFF;
   box-shadow: 0px 1.3978px 8.03736px rgba(8, 20, 33, 0.04);
-  border-radius: 2.7956px;
+  border-radius: var(--border-radius-s);
   
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 500;
-  font-size: 7px;
+  font-size: var(--font-size-xs);
   /* line-height: 8px; */
   color: #000000;
 }
@@ -118,7 +118,7 @@
 .different-card__item--red div {
   background-color: #FF3B3B;
   overflow: hidden;
-  border-radius: 1.54064px;
+  border-radius: var(--border-radius-s);
   padding: 0;
   border: none;
 }

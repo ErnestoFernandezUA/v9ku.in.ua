@@ -1,33 +1,34 @@
 @import url(../player-card/player-card.css);
+@import url(./swiper-ratings.style.css);
 
 .ratings .title {
   margin-bottom: 10px;
 }
 
-.ratings__container {
+/* .ratings__container {
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
   gap: 6px;
-  min-width: 0;  
-}
+  min-width: 0;
+} */
 
 @media screen and (min-width: 600px) {
-  .ratings__container {
+  /* .ratings__container {
     grid-template-columns: repeat(8, minmax(50px, 1fr));
     gap: 10px; 
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {
-  .ratings__container {
+  /* .ratings__container {
     grid-template-columns: repeat(6, minmax(50px, 1fr));
     gap: 10px; 
-  }
+  } */
 }
 
 @media screen and (min-width: 1260px) {
-  .ratings__container {
+  /* .ratings__container {
     grid-template-columns: repeat(8, minmax(50px, 1fr));
     gap: 10px;
-  }
+  } */
 }

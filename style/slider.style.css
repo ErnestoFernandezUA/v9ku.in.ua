@@ -68,6 +68,6 @@
 
   .swiper-scrollbar,
   .swiper-bg-scroll {
-    display: none;
+    /* display: none; */
   }
 }

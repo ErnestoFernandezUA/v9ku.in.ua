@@ -1,11 +1,14 @@
+@import url('../../style/variables.style.css');
+
 .card-player-full {
   background: #FFFFFF;
-  box-shadow: 0px 1.76066px 10.1238px rgba(8, 20, 33, 0.04);
-  border-radius: 3.52132px;
+  box-shadow: var(--box-shadow-s);
+  border-radius: var(--border-radius-s);
   padding: 3px;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 93px;
+  /* width: 100%; */
+  min-width: 100px;
+  width: 100px;
 }
 
 .card-player-full__photo {
@@ -17,7 +20,7 @@
   justify-content: end;
   align-items: center;
   background: rgba(9, 9, 9, 0.05);
-  border-radius: 3.52132px 3.52132px 0px 0px;
+  border-radius: var(--border-radius-s) var(--border-radius-s) 0px 0px;
 }
 
 .card-player-full__photo img:first-child {
@@ -46,7 +49,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 7px;
+  font-size: var(--font-size-xs);
   line-height: 8px;
   text-align: center;
   color: #fff;
@@ -75,7 +78,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 500;
-  font-size: 4.03587px;
+  font-size: var(--font-size-xs);
   line-height: 5px;
   text-align: center;
   color: #000000;
@@ -93,7 +96,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 5px;
+  font-size: var(--font-size-xs);
   line-height: 6px;
   color: #0B0B0B;
   opacity: 0.5;
@@ -118,7 +121,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 7px;
+  font-size: var(--font-size-xs);
   line-height: 8px;
   text-align: center;
   text-transform: uppercase;
@@ -139,7 +142,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 500;
-  font-size: 4.03587px;
+  font-size: var(--font-size-xs);
   line-height: 5px;
   text-align: center;
 }
@@ -169,7 +172,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
-  font-size: 5px;
+  font-size: var(--font-size-xs);
   line-height: 13px;
   text-align: center;
   color: #0B0B0B;
@@ -201,14 +204,14 @@
 
 @media screen and (min-width: 1260px) {
   .card-player-full {
-    border-radius: 8px;
+    border-radius: var(--border-radius-l);
     padding: 9px;
     max-width: 217px;
   }
   
   .card-player-full__photo {
     height: 166px;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: var(--border-radius-l) var(--border-radius-l) 0px 0px;
   }
   
   .card-player-full__photo img:nth-child(2) {
@@ -227,7 +230,7 @@
   
   .card-player-full__name {
     padding: 6px;
-    font-size: 16px;
+    font-size: var(--font-size-xl);
     line-height: 19px;
   }
   
@@ -237,7 +240,7 @@
   
   .card-player-full__top-statistic li {
     gap: 4px;
-    font-size: 8px;
+    font-size: var(--font-size-s);
     line-height: 9px;
   }
   
@@ -248,7 +251,7 @@
   
   .card-player-full__middle-statistic {
     padding: 0 10px;
-    font-size: 12px;
+    font-size: var(--font-size-m);
     line-height: 14px;
   }
   
@@ -264,7 +267,7 @@
   }  
   
   .card-player-full h4 {
-    font-size: 16px;
+    font-size: var(--font-size-xl);
     line-height: 32px;
     margin: 0;
     padding: 0;
@@ -272,7 +275,7 @@
   
   .card-player-full__skills {
     margin: 0 0 10px;
-    font-size: 8px;
+    font-size: var(--font-size-s);
     line-height: 9px;
   }
   
@@ -287,7 +290,7 @@
   }
     
   .card-player-full__footer p {
-    font-size: 12px;
+    font-size: var(--font-size-m);
     line-height: 24px;
     opacity: 0.5;
   }

@@ -3,7 +3,7 @@
   box-sizing: border-box;
   position: relative;
   height: 134px;
-  border-radius: 4px;
+  border-radius: var(--border-radius-m);
   padding: 3.15px;
   width: 100%;
   box-sizing: border-box;
@@ -19,7 +19,7 @@
   align-items: center;
   flex-direction: column;
   background: rgba(9, 9, 9, 0.05);
-  border-radius: 3.59494px 3.59494px 0px 0px;
+  border-radius: var(--border-radius-s) var(--border-radius-s) 0px 0px;
 }
 
 .player-card__left-icon {
@@ -41,7 +41,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 5px;
+  font-size: var(--font-size-xs);
   line-height: 6px;
   text-transform: uppercase;
   color: #0B0B0B;
@@ -69,7 +69,7 @@
   color: #FFFFFF;
   background: linear-gradient(90.21deg, #292929 15.28%, #000000 94.83%);
 
-  font-size: 7px;
+  font-size: var(--font-size-xs);
   line-height: 13.49px;
 }
 
@@ -86,7 +86,7 @@
   color: #0B0B0B;
   opacity: 0.3;
   
-  font-size: 5px;
+  font-size: var(--font-size-xs);
   line-height: 12.59px;
 }
 
@@ -99,7 +99,7 @@
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(11, 11, 11, 0.05);;
 
-  font-size: 6px;
+  font-size: var(--font-size-xs);
   line-height: 7px;
 }
 
@@ -120,7 +120,7 @@
   font-style: normal;
   font-weight: 500;
   
-  font-size: 6px;
+  font-size: var(--font-size-xs);
   line-height: 7px;
   margin-right: 2px;
 }
@@ -133,7 +133,7 @@
   .player-card {
     width: auto;
     height: 298px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-l);
     padding: 6.6px;
     max-width: 170px;
   }
@@ -141,7 +141,7 @@
   .player-card__photo-container {
     width: auto;
     height: 166px;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: var(--border-radius-l) var(--border-radius-l) 0px 0px;
   }
 
   .player-card__left-icon {
@@ -155,7 +155,7 @@
   }
 
   .player-card__left-icon > span {
-    font-size: 10px;
+    font-size: var(--font-size-s);
     line-height: 12px;
   }
 
@@ -166,17 +166,17 @@
   }
 
   .player-card__role {
-    font-size: 15px;
+    font-size: var(--font-size-l);
     line-height: 30px;
   }
 
   .player-card__club {
-    font-size: 11px;
+    font-size: var(--font-size-m);
     line-height: 28px;
   }
 
   .player-card__name {  
-    font-size: 13px;
+    font-size: var(--font-size-m);
     line-height: 15px;
   }
 
@@ -187,7 +187,7 @@
   }
 
   .player-card__link > span {
-    font-size: 14px;
+    font-size: var(--font-size-l);
     line-height: 14px;
     margin-right: 5px;
   }
