@@ -8,6 +8,8 @@ for (let i = 0; i < slidesRatings.length; i++) {
   totalWidthRatings += slide.offsetWidth;
 }
 
+totalWidthRatings += slidesRatings.length * 10;
+
 console.log(window.innerWidth, 'totalWidthRatings = ', totalWidthRatings);
 
 new Swiper(swiperRatings, {
@@ -18,7 +20,6 @@ new Swiper(swiperRatings, {
   scrollbar: {
     el: '.swiper-scrollbar',
     dragSize: 70,
-    hide: Boolean(window.innerWidth < totalWidthRatings),
   },
 });
 
@@ -28,5 +29,8 @@ if (window.innerWidth >= totalWidthRatings) {
   const swiperWrapper = swiperRatings.querySelector('.swiper-wrapper');
   swiperRatings.style.display = 'flex';
   swiperRatings.style.justifyContent = 'center';
+  swiperRatings.style.alignItems = 'center';
   swiperWrapper.style.maxWidth = '1440px';
+  swiperWrapper.style.width = 'fit-content';
+  // swiperWrapper.style.backgroundColor = 'red';
 }

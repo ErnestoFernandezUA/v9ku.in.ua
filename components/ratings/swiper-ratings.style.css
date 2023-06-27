@@ -24,3 +24,18 @@
     /* display: none; */
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .swiper-ratings .swiper-slide:first-child {
+    margin-left: 0px;
+  }
+  
+  .swiper-ratings .swiper-slide:last-child {
+    margin-right: 0px;
+  }
+
+  .swiper-scrollbar,
+  .swiper-bg-scroll {
+    /* display: none; */
+  }
+}

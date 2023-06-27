@@ -134,6 +134,7 @@
   .table-league {
     margin: 0 50px;
     box-shadow: 0px 2.02612px 11.6502px rgba(8, 20, 33, 0.04);
+    max-width: 1260px;
   }
 
   .table-league .container > * {
@@ -215,5 +216,12 @@
   .cell--games {
     background: rgba(11, 11, 11, 0.05);
     border: 1px solid rgba(32, 32, 32, 0.2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .table-league {
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }
