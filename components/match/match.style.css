@@ -233,7 +233,6 @@
   line-height: 150.19%;
   text-align: center;
   color: #000000;
-
   margin-bottom: 30px;
 }
 
@@ -243,7 +242,7 @@
 
 .match__history-table {
   width: 100%;
-  border-spacing: 2.33px;
+  border-spacing: 3px;
 }
 
 .match__history-table caption, 
@@ -252,8 +251,8 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 600;
-  font-size: var(--font-size-xs);
-  line-height: 13px;
+  font-size: var(--font-size-m);
+  line-height: 150%;
   text-align: center;
 
   color: #FFFFFF;
@@ -391,9 +390,9 @@
 .match__timeline-minutes {
   background: #F3F3F3;
   border-radius: var(--border-radius-s);
-  width: 14px;
-  line-height: 14px;
-  font-size: var(--font-size-xs);
+  width: 18px;
+  line-height: 18px;
+  font-size: var(--font-size-s);
   text-align: center;
 }
 
@@ -407,7 +406,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxl);
   line-height: 150%;
   text-align: left;
   text-transform: uppercase;
@@ -424,7 +423,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   line-height: 150%;
   text-align: center;
   color: #59C65D;

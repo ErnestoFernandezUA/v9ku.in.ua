@@ -4,7 +4,7 @@ if (!swipersTable) {
   console.error('class .swiper-table is not found');
 } else {
   new Swiper('.swiper-table', {
-    enabled: Boolean(window.innerWidth < 700),
+    enabled: Boolean(window.innerWidth < 1260),
     slidesPerView: 'auto',
     spaceBetween: 5,
     speed: 1000,
@@ -23,5 +23,5 @@ if (!swipersTable) {
 }
 
 if (window.innerWidth >= 700) {
-  
+
 }
