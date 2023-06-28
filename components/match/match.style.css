@@ -243,21 +243,24 @@
 .match__history-table {
   width: 100%;
   border-spacing: 3px;
-}
-
-.match__history-table caption, 
-.match__history-table th,
-.match__history-table td {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 600;
-  font-size: var(--font-size-m);
-  line-height: 150%;
   text-align: center;
+  line-height: 150%;
+}
 
+.match__history-table caption, 
+.match__history-table th {
+  border-radius: var(--border-radius-s);
+  font-size: var(--font-size-m);
   color: #FFFFFF;
   background: #292929;
-  border-radius: var(--border-radius-s);
+}
+
+.match__history-table td {
+  font-size: var(--font-size-s);
+  line-height: 150%;
 }
 
 .match__history-table td {

@@ -94,14 +94,9 @@
   height: 24px;
 }
 
-.team-page__photo {
-  display: block;
-  border-radius: var(--border-radius-m);
-  /* background-image: url(./assets/images/team-photo.jpg); */
-  background-repeat: no-repeat;
-  background-size: cover;
+.team-page__photo img {
   width: 100%;
-  height: calc(0.6 * 100vw);
+  border-radius: var(--border-radius-m);
 }
 
 .team-page__management {
