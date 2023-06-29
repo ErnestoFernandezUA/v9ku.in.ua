@@ -8,8 +8,12 @@
   margin-bottom: 15px;
 }
 
-.selection-zone .ratings__container {
+.selection-zone__players {
   margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .selection-zone__footer-title {

@@ -1,3 +1,5 @@
+@import url('./swiper-disqualification.style.css');
+
 .disqualification {
 }
 
@@ -10,16 +12,16 @@
   grid-template-columns: repeat(4, minmax(50px, 1fr));
   gap: 6px;
   min-width: 0;  */
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 6px;
+  gap: 6px; */
 }
 
-.disqualification__list > div {
+/* .disqualification__list > div {
   max-width: 170px;
-}
+} */
 
 @media screen and (min-width: 1260px) {
   .disqualification__title {
@@ -27,6 +29,6 @@
   }
 
   .disqualification__list {
-    gap: 10px;
+    /* gap: 10px; */
   }
 }

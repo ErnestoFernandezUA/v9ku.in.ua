@@ -1,3 +1,5 @@
+@import url('./swiper-match-zone.style.css');
+
 .match-zone {
 
 }
@@ -10,6 +12,7 @@
 
 .match-zone__current-date {
   margin-bottom: 30px;
+  margin: 0 10px;
 }
 
 .match-zone__title {
