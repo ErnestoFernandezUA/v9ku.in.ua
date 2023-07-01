@@ -1,12 +1,9 @@
-@import url('./swiper-match-zone.style.css');
-
 .match-zone {
 
 }
 
 .match-zone__controls {
   margin: 0 auto;
-  max-width: 890px;
   margin-bottom: 30px;
 }
 

@@ -1,0 +1,63 @@
+@import url('./swiper-month-controls.style.css');
+
+.month-controls__button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-m);
+  color: #292929;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-l);
+  background-color: #fff;
+  /* min-width: 50px; */
+  /* height: 70px; */
+}
+
+.month-controls__button--past {
+  background-color: #FFD018;
+  border: 1px solid #FFD018;
+}
+
+.month-controls__button--current {
+  background-color: #FF3B3B;
+  border: 1px solid #FF3B3B;
+  color: #fff;
+}
+
+.month-controls__button p {
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+}
+
+.month-controls__button > p:first-child {
+  font-weight: 400;
+}
+
+.month-controls__button > p:nth-child(2) {
+  font-weight: 500;
+}
+
+
+@media screen and (min-width: 1370px) {
+  .calendar-of-matches__button {
+    height: 70px;
+    font-size: var(--font-size-l);
+    border-radius: var(--border-radius-l);
+  }
+
+  .month-controls__button {
+    font-size: var(--font-size-xl);
+    border-radius: var(--border-radius-l);
+    height: 70px;
+  }
+}

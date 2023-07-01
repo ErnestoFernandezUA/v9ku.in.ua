@@ -3,6 +3,7 @@
 @import url(./swiper-matches.style.css);
 @import url(../photo-of-match/photo-of-match.style.css);
 @import url(../video-content/video-content.style.css);
+@import url(../month-controls/month-controls.css);
 
 
 .calendar-of-matches {
@@ -17,10 +18,7 @@
 }
 
 .calendar-of-matches__head-nav {
-  display: flex;
-  gap: 2px;
-  justify-content: space-between;
-  margin: 0 0 25px;
+  margin-bottom: 30px;
 }
 
 .calendar-of-matches__aside {
@@ -31,51 +29,6 @@
   display: block;
 }
 
-.calendar-of-matches__button {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--font-size-s);
-  color: #292929;
-  padding: 3px 0;
-  margin: 0;
-  border-radius: var(--border-radius-m);;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  min-width: 50px;
-}
-
-.calendar-of-matches__button--past {
-  background-color: #FFD018;
-  border: 1px solid #FFD018;
-}
-
-.calendar-of-matches__button--current {
-  background-color: #FF3B3B;
-  border: 1px solid #FF3B3B;
-  color: #fff;
-}
-
-.calendar-of-matches__button p {
-  line-height: 150%;
-  padding: 0;
-  margin: 0;
-}
-
-.calendar-of-matches__button > p:first-child {
-  font-weight: 400;
-}
-
-.calendar-of-matches__button > p:nth-child(2) {
-  font-weight: 500;
-}
 
 @media screen and (min-width: 1260px) {
   .calendar-of-matches {
@@ -98,6 +51,7 @@
 
   .calendar-of-matches__head-nav {
     margin: 0;
+    max-width: calc(100vw - 330px - 100px);
   }
 
   .calendar-of-matches__aside {
@@ -135,12 +89,6 @@
     margin-bottom: 0;
   }
 
-  .calendar-of-matches__button {
-    height: 70px;
-    font-size: var(--font-size-l);
-    border-radius: var(--border-radius-l);
-  }
-
   .calendar-of-matches__dynamic-content {
     position: relative;
     overflow: hidden;
@@ -156,4 +104,10 @@
     max-width: 1440px;
     margin: 0 auto;
   }
+
+  .calendar-of-matches__head-nav {
+    margin: 0;
+    max-width: 1110px;
+  }
+
 }

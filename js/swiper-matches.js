@@ -21,4 +21,4 @@ swiperMatches.forEach(el => new Swiper(el, {
       console.log('slide changed');
     },
   },
-}));
+})); 
