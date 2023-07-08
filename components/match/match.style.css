@@ -373,7 +373,7 @@
   width: 120px;
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
 }
 
 .match__timeline li div:first-child {
@@ -383,8 +383,7 @@
 
 
 .match__timeline li div img {
-  width: 10px;
-  height: 10px;
+  height: 18px;
 }
 
 .match__timeline--team1 div:last-child img {
