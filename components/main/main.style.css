@@ -4,6 +4,7 @@
 }
 
 .main {
+  overflow: hidden;
 }
 
 .main > section {
