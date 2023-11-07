@@ -7,6 +7,7 @@
 
 
 .calendar-of-matches {
+  
 }
 
 .calendar-of-matches__grid-container {
@@ -27,6 +28,7 @@
 
 .calendar-of-matches__dynamic-content {
   display: block;
+  margin: 0 10px;
 }
 
 
@@ -59,7 +61,8 @@
   }
 
   .calendar-of-matches__dynamic-content {
-    padding: 40px;
+    padding: 0;
+    margin: 0;
   }  
 
   .calendar-of-matches__grid-container {
@@ -90,6 +93,7 @@
   }
 
   .calendar-of-matches__dynamic-content {
+    height: fit-content;
     position: relative;
     overflow: hidden;
     background: #FFFFFF;

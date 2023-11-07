@@ -15,7 +15,7 @@
   background-color: linear-gradient(90.21deg, #292929 15.28%, #000000 94.83%);
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 560px) {
   .title {
     font-size: 32px;
     line-height: 38px;

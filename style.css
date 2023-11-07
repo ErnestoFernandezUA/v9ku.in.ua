@@ -14,7 +14,8 @@
 @import url(./components/ratings/ratngs.style.css);
 @import url(./components/table-league/table-league.style.css);
 @import url(./components/calendar-of-matches/calendar-of-matches.css);
-@import url(./components/selection-zone/selection-zone.style.css);
+@import url(./components/green-zone/green-zone.style.css);
+@import url(./components/controls/controls.style.css);
 @import url(./components/disqualification/disqualification.style.css);
 
 @import url(./components/match-zone/match-zone.style.css);

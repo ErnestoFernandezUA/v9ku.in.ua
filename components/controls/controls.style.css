@@ -1,0 +1,40 @@
+.controls {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid red;
+  
+}
+
+.controls__button {
+  display: block;
+  border: none;
+  background-color: inherit;
+}
+
+.controls__title {
+  border: 1px solid red;
+}
+
+.controls__image {
+  height: 96px;
+  overflow: hidden;
+}
+
+
+@media screen and (min-width: 1260px) {
+  .controls {
+    
+  }
+
+  .controls__button {
+
+  }
+  
+  .controls__title {
+  
+  }
+  
+  .controls__image {
+    height: 250px;
+  }
+}
