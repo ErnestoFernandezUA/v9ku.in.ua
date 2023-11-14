@@ -1,51 +1,112 @@
 .controls {
   display: flex;
   flex-wrap: wrap;
-  /* flex:  1; */
-  border: 1px solid red;
-  /* width: 250px; */
-  
-  /* gap: 25px; */
-  max-width: 1440px;
-  margin: 0 auto;
+  /* display: grid; */
+  gap: 0.500em;
   justify-content: space-between;
   container-type: inline-size;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
 }
-
-
-/* .controls .green-zone {
-} */
-
 .controls__button {
-  
+  text-align: center;
   display: block;
-  border: 1px solid red;
-  /* flex-shrink: 1; */
-  width: calc((100% - 100px) / 5);
-
+  width: calc((100% - 20px - 2 * 0.500em) / 3);
 }
 
 .controls__button * {
   pointer-events: none;
 }
 .controls__title {
-  border: 1px solid red;
+  font-size: 0.85em;
+  color: #292929;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.833em;
+  overflow: hidden;
 }
 
 .controls__image {
-  /* height: 96px; */
-  /* overflow: hidden; */
-  font-size: 0.1em;
-  font-size: 0.2cqmin;
+  font-size: 0.4cqmin;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 1 / auto;
 }
 
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 560px) {
   .controls {
+    /* margin: 0 50px;
+    gap: 23px; */
   }
 
   .controls__button {
+    
+    /* width: calc((100% - 100px) / 5); */
+  }
+  
+  .controls__title {
+    /* font-size: 1.667em;  */
+  }
+  
+  .controls__image {
+    /* font-size: 0.3em; */
+    font-size: 0.5cqmin;
+  }
+}
 
+@media screen and (min-width: 760px) {
+  .controls {
+    /* margin: 0 50px;
+    gap: 23px; */
+  }
+
+  .controls__button {
+    
+    /* width: calc((100% - 100px) / 5); */
+  }
+  
+  .controls__title {
+    font-size: 1.667em; 
+  }
+  
+  .controls__image {
+    /* font-size: 0.3em; */
+    font-size: 0.5cqmin;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .controls {
+    margin: 0 50px;
+    gap: 23px;
+  }
+
+  .controls__button {
+    
+    width: calc((100% - 100px) / 5);
+  }
+  
+  .controls__title {
+    text-align: left;
+    font-size: 1.667em;
+  }
+  
+  .controls__image {
+    font-size: 0.3cqmin;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .controls {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .controls__button {
   }
   
   .controls__title {
@@ -53,6 +114,5 @@
   }
   
   .controls__image {
-    /* height: 250px; */
   }
 }
