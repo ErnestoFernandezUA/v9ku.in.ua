@@ -2,6 +2,10 @@
   margin-bottom: 12px;
 }
 
+.swiper-ratings .swiper-slide {
+  min-width: 9.875rem;
+}
+
 .swiper-ratings .swiper-slide:first-child {
   margin-left: 10px;
 }

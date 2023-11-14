@@ -2,6 +2,10 @@
   /* box-sizing: border-box; */
 }
 
+html {
+  font-size: 12px;
+}
+
 body,
 div,
 p {
@@ -17,4 +21,15 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-size: inherit;
+  border: none;
+  outline: none;
+  padding: 0;
+  line-height: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
 }

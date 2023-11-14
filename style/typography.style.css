@@ -2,8 +2,8 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: var(--font-size-xxxl);
-  line-height: 23px;
+  font-size: 2em;
+  line-height: 2;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 560px) {
   .title {
-    font-size: 32px;
-    line-height: 38px;
+    /* font-size: 32px;
+    line-height: 38px; */
   }
 }

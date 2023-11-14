@@ -6,6 +6,10 @@
   --border-radius-m: 4px;
   --border-radius-l: 8px;
 
+  --border-radius-s: 0.250em;
+  --border-radius-m: 0.333em;
+  --border-radius-l: 0.667em;
+
 
   --box-shadow-s:  0px 2px 11px rgba(8, 20, 33, 0.04);
   --box-shadow-m:  0px 4px 23px rgba(8, 20, 33, 0.04);
